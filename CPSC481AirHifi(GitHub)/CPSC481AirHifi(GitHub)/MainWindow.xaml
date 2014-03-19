@@ -1,10 +1,17 @@
 ﻿<Window x:Class="CPSC481AirHifi_GitHub_.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="426,61,0,0" Name="button1" VerticalAlignment="Top" Width="75" />
-        <Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="12,61,0,0" Name="button2" VerticalAlignment="Top" Width="75" />
-        <Label Content="Test!" Height="28" HorizontalAlignment="Left" Margin="230,56,0,0" Name="label1" VerticalAlignment="Top" Width="99" />
-    </Grid>
+        Title="MainWindow" Height="427" Width="832">
+    <DockPanel Height="Auto" Name="dockPanel1" Width="Auto" LastChildFill="True">
+        <StackPanel Height="Auto" Name="stackPanel1" Width="200" />
+        <StackPanel Height="Auto" Name="stackPanel2" Width="200" DockPanel.Dock="Right" />
+        <StackPanel Height="50" Name="stackPanel3" Width="Auto" DockPanel.Dock="Bottom" Orientation="Horizontal">
+            <Button Content="Hotels" Height="24" Name="button2" Width="45" MinWidth="41" />
+            <Button Content="Food" Height="25" Name="button3" Width="45" MinWidth="41" />
+            <Button Content="Events" Height="23" Name="button4" Width="45" MinWidth="41" />
+            <Label Content="Search:" Height="28" Name="label1" MinWidth="41" />
+            <ComboBox Height="23" Name="comboBox1" MinWidth="84" Width="220" SelectionChanged="comboBox1_SelectionChanged" />
+        </StackPanel>
+        <Button Content="Button" Height="Auto" Name="button1" Width="Auto" />
+    </DockPanel>
 </Window>

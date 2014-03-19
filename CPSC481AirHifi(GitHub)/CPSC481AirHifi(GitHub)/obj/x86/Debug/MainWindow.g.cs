@@ -175,12 +175,6 @@ namespace CPSC481AirHifi_GitHub_ {
             return;
             case 9:
             this.comboBox1 = ((System.Windows.Controls.ComboBox)(target));
-            
-            #line 13 "..\..\..\MainWindow.xaml"
-            this.comboBox1.SelectionChanged += new System.Windows.Controls.SelectionChangedEventHandler(this.comboBox1_SelectionChanged);
-            
-            #line default
-            #line hidden
             return;
             case 10:
             this.button1 = ((System.Windows.Controls.Button)(target));

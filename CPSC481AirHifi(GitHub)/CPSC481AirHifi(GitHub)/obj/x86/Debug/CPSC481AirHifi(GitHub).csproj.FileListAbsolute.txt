@@ -1,0 +1,11 @@
+\\cs-fs01\Profiles\ug\ampepers\Desktop\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\bin\Debug\CPSC481AirHifi(GitHub).exe
+\\cs-fs01\Profiles\ug\ampepers\Desktop\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\bin\Debug\CPSC481AirHifi(GitHub).pdb
+\\cs-fs01\Profiles\ug\ampepers\Desktop\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainWindow.baml
+\\cs-fs01\Profiles\ug\ampepers\Desktop\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainWindow.g.cs
+\\cs-fs01\Profiles\ug\ampepers\Desktop\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\App.g.cs
+\\cs-fs01\Profiles\ug\ampepers\Desktop\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub)_MarkupCompile.cache
+\\cs-fs01\Profiles\ug\ampepers\Desktop\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).g.resources
+\\cs-fs01\Profiles\ug\ampepers\Desktop\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi_GitHub_.Properties.Resources.resources
+\\cs-fs01\Profiles\ug\ampepers\Desktop\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).csproj.GenerateResource.Cache
+\\cs-fs01\Profiles\ug\ampepers\Desktop\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).exe
+\\cs-fs01\Profiles\ug\ampepers\Desktop\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).pdb
