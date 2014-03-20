@@ -13,3 +13,15 @@ C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(Git
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).pdb
 C:\Users\KenVirtual\Documents\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).exe
 C:\Users\KenVirtual\Documents\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).pdb
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\bin\Debug\CPSC481AirHifi(GitHub).exe
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\bin\Debug\CPSC481AirHifi(GitHub).pdb
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).csprojResolveAssemblyReference.cache
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainWindow.baml
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\TransportationSearch.baml
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\TransportationSearch.g.cs
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\App.g.cs
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub)_MarkupCompile.cache
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).g.resources
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi_GitHub_.Properties.Resources.resources
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).csproj.GenerateResource.Cache
