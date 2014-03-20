@@ -3,7 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="427" Width="832" ResizeMode="NoResize">
     <DockPanel Height="Auto" Name="dockPanel1" Width="Auto" LastChildFill="True">
-        <StackPanel Height="Auto" Name="stackPanel1" Width="200" Background="#9B17A7CB" />
+        <StackPanel Height="Auto" Name="stackPanel1" Width="200" Background="#9B17A7CB">
+            <Image Height="140" Name="taxi_ads" Stretch="Uniform" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/taxi_1.jpg" ImageFailed="taxi_ads_ImageFailed" />
+            <Separator Height="5" Name="separator1" Width="Auto" />
+        </StackPanel>
         <StackPanel Height="Auto" Name="stackPanel2" Width="200" DockPanel.Dock="Right" Background="#9B17A7CB" />
         <StackPanel Height="50" Name="stackPanel3" Width="Auto" DockPanel.Dock="Bottom" Orientation="Horizontal" Background="#82EFEF0F">
             <Button Content="Hotels" Height="24" Name="button2" Width="45" MinWidth="41" />

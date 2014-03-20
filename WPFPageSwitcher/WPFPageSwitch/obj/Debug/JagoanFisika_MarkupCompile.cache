@@ -4,15 +4,17 @@
 winexe
 C#
 .cs
-H:\Works\_VR\WPFPageSwitcher\WPFPageSwitch\obj\Debug\
+C:\Users\KenVirtual\Documents\GitHub\GitRepos\WPFPageSwitcher\WPFPageSwitch\obj\Debug\
 WPFPageSwitch
 none
 false
 DEBUG;TRACE
-H:\Works\_VR\WPFPageSwitcher\WPFPageSwitch\App.xaml
+C:\Users\KenVirtual\Documents\GitHub\GitRepos\WPFPageSwitcher\WPFPageSwitch\App.xaml
 7169741664
 
 131964115077
-101927083282
+10-486943014
 Menu\Gameplay.xaml;Menu\LoadGame.xaml;Menu\Login.xaml;Menu\MainMenu.xaml;Menu\Option.xaml;Menu\Register.xaml;PageSwitcher.xaml;
+
+False
 
