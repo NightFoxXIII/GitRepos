@@ -12,14 +12,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
+using System.Windows.Forms;
+
 
 namespace CPSC481AirHifi_GitHub_
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+
     public partial class MainWindow : Window
     {
+
+        internal System.Windows.Forms.ImageList ImageList1;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -33,6 +39,13 @@ namespace CPSC481AirHifi_GitHub_
         private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)
         {
 
+        }
+
+        private void Canvas_MouseLeftButtonDown_Public_Transport(object sender, MouseButtonEventArgs e)
+        {
+
+
+            canvas1.Children.Add(weat_img2);
         }
     }
 }
