@@ -61,8 +61,8 @@
     <Compile Include="Component1.Designer.cs">
       <DependentUpon>Component1.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubMenus\UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="SubMenus\RouteSearch.xaml.cs">
+      <DependentUpon>RouteSearch.xaml</DependentUpon>
     </Compile>
     <Page Include="Menu\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -76,7 +76,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="SubMenus\UserControl1.xaml">
+    <Page Include="SubMenus\RouteSearch.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
