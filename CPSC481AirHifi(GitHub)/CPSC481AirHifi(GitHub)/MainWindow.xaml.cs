@@ -15,16 +15,16 @@ using System.Windows.Shapes;
 namespace CPSC481AirHifi_GitHub_
 {
     /// <summary>
-    /// Interaction logic for TransportationSearch.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class TransportationSearch : Page
+    public partial class MainWindow : Window
     {
-        public TransportationSearch()
+        public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
