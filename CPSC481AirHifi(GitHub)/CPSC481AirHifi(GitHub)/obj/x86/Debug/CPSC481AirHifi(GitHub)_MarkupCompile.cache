@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\KenVirtual\Documents\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\
 CPSC481AirHifi_GitHub_
 none
 false
 DEBUG;TRACE
-C:\Users\KenVirtual\Documents\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\App.xaml
-41076301622
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\App.xaml
+3-639621695
 
-101855798406
+9-431908827
 12-1381780322
-Menu\MainWindow.xaml;SubMenus\taxi_adPageSwitch.xaml;SubMenus\TransportationSearch.xaml;SubMenus\UserControl1.xaml;
+LaunchScreen.xaml;Menu\MainWindow.xaml;SubMenus\RouteSearch.xaml;
 
 False
 

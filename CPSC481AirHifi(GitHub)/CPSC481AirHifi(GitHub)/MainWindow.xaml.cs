@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace CPSC481AirHifi_GitHub_
 {
@@ -25,6 +26,11 @@ namespace CPSC481AirHifi_GitHub_
         }
 
         private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)
         {
 
         }

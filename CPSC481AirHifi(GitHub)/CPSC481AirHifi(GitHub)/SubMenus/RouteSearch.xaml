@@ -19,7 +19,7 @@
 
         <Rectangle HorizontalAlignment="Left" Height="70" Margin="8,122,0,0" Stroke="#FFF78080" VerticalAlignment="Top" Width="191"/>
 
-        <Button Content="Button" HorizontalAlignment="Center" Height="35" Margin="0,11,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Opacity="0.5">
+        <Button Content="Button" HorizontalAlignment="Center" Height="35" Margin="80,11,80,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Opacity="0.5">
             <Button.Background>
                 <ImageBrush ImageSource="/CPSC481AirHifi(GitHub);component/Icon/icon_25954.png" Stretch="UniformToFill"/>
             </Button.Background>
@@ -32,7 +32,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Center" Height="35" Margin="0,11,0,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Opacity="0.5">
+        <Button Content="Button" HorizontalAlignment="Center" Height="35" Margin="80,11,80,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Opacity="0.5">
             <Button.Background>
                 <ImageBrush ImageSource="/CPSC481AirHifi(GitHub);component/Icon/icon_5593.png" Stretch="UniformToFill"/>
             </Button.Background>
