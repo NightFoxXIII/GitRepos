@@ -61,12 +61,14 @@
     <Compile Include="Component1.Designer.cs">
       <DependentUpon>Component1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ISwitchable.cs" />
     <Compile Include="Menu\LaunchScreen.xaml.cs">
       <DependentUpon>LaunchScreen.xaml</DependentUpon>
     </Compile>
     <Compile Include="SubMenus\RouteSearch.xaml.cs">
       <DependentUpon>RouteSearch.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Switcher.cs" />
     <Page Include="Menu\LaunchScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

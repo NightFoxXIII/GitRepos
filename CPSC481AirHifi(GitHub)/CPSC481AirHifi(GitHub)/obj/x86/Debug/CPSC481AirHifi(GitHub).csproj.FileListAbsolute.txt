@@ -17,9 +17,7 @@ C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(Git
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\bin\Debug\CPSC481AirHifi(GitHub).pdb
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).csprojResolveAssemblyReference.cache
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainWindow.baml
-C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\TransportationSearch.baml
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainWindow.g.cs
-C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\TransportationSearch.g.cs
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\App.g.cs
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub)_MarkupCompile.cache
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).g.resources
@@ -40,9 +38,7 @@ C:\Users\KenVirtual\Documents\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirH
 C:\Users\KenVirtual\Documents\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\UserControl1.g.cs
 C:\Users\KenVirtual\Documents\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\taxi_adPageSwitch.baml
 C:\Users\KenVirtual\Documents\GitHub\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\taxi_adPageSwitch.g.cs
-C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\LaunchScreen.baml
-C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\Menu\MainWindow.baml
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\RouteSearch.baml
-C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\LaunchScreen.g.cs
-C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\Menu\MainWindow.g.cs
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\RouteSearch.g.cs
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\Menu\LaunchScreen.baml
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\Menu\LaunchScreen.g.cs

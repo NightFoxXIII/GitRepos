@@ -23,5 +23,16 @@ namespace CPSC481AirHifi_GitHub_
         {
             InitializeComponent();
         }
+
+        private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
+        }
+
     }
 }
