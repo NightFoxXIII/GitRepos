@@ -19,24 +19,31 @@ namespace CPSC481AirHifi_GitHub_
     /// </summary>
     public partial class LaunchScreen : UserControl, ISwitchable
     {
+
+        List<string> comboboxlist = new List<string>(new String[] { "ShortRoute", "MediumRoute", "LongRoute" });
+
         public LaunchScreen()
         {
             InitializeComponent();
         }
 
+        private void ComboBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            var comboBox = sender as ComboBox;
+            comboBox.ItemsSource = comboboxlist;
+        }
+
         private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            var comboBox = sender as ComboBox;
+            string value = comboBox.SelectedItem as string;
+            //Lines to feed the information into the state so that routesearch displays correctly
+            Switcher.Switch(new RouteSearch()); //The instance were the object state as second param will be used here
         }
 
         private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)
         {
 
-        }
-
-        private void button4_Click(object sender, RoutedEventArgs e)
-        {
-            Switcher.Switch(new RouteSearch());
         }
 
         #region ISwitchable Members
