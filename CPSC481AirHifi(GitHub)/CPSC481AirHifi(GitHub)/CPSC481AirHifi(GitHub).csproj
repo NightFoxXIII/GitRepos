@@ -68,6 +68,9 @@
     <Compile Include="SubMenus\RouteSearch.xaml.cs">
       <DependentUpon>RouteSearch.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SubMenus\canvas_weat.xaml.cs">
+      <DependentUpon>canvas_weat.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Switcher.cs" />
     <Page Include="Menu\LaunchScreen.xaml">
       <SubType>Designer</SubType>
@@ -86,6 +89,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SubMenus\RouteSearch.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubMenus\canvas_weat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -126,7 +133,9 @@
   <ItemGroup>
     <Resource Include="Images\taxi_3.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Images\Weather\" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Icon\icon_25954.png" />
     <Resource Include="Icon\icon_38229.png" />
