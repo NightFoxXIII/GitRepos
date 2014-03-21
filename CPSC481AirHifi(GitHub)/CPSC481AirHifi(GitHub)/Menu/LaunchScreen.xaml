@@ -15,7 +15,7 @@
             <StackPanel Height="50" Name="stackPanel3" Width="Auto" DockPanel.Dock="Bottom" Orientation="Horizontal" Background="#82EFEF0F">
                 <Button Content="Hotels" Name="button2" Width="45" MinWidth="41" Margin="0,14,0,13" />
                 <Button Content="Food" Name="button3" Width="45" MinWidth="41" Margin="0,14,0,13" />
-                <Button Content="Events" Height="23" Name="button4" Width="45" MinWidth="41" Margin="0,14" />
+                <Button Content="Events" Height="23" Name="button4" Width="45" MinWidth="41" Margin="0,14" Click="button4_Click" />
                 <Label Content="Search:" Height="28" Name="label1" MinWidth="41" />
                 <ComboBox Height="23" Name="comboBox1" MinWidth="84" Width="220" SelectionChanged="comboBox1_SelectionChanged" />
             </StackPanel>

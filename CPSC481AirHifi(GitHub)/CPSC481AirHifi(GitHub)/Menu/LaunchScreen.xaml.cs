@@ -17,7 +17,7 @@ namespace CPSC481AirHifi_GitHub_
     /// <summary>
     /// Interaction logic for LaunchScreen.xaml
     /// </summary>
-    public partial class LaunchScreen : UserControl
+    public partial class LaunchScreen : UserControl, ISwitchable
     {
         public LaunchScreen()
         {
@@ -33,6 +33,18 @@ namespace CPSC481AirHifi_GitHub_
         {
 
         }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new RouteSearch());
+        }
+
+        #region ISwitchable Members
+        public void UtilizeState(object state)
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
 
     }
 }
