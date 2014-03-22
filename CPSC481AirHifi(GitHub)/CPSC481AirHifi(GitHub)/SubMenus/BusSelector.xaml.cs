@@ -30,6 +30,11 @@ namespace CPSC481AirHifi_GitHub_
             throw new NotImplementedException();
         }
 
+        private void BackButtonPress(object sender, RoutedEventArgs e)
+        {
+            //Set the needed flags in state here
+            Switcher.Switch(new LaunchScreen());
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -39,3 +44,4 @@ namespace CPSC481AirHifi_GitHub_
 
     }
 }
+

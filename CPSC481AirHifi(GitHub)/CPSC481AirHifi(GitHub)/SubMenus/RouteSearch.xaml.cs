@@ -30,8 +30,13 @@ namespace CPSC481AirHifi_GitHub_
             throw new NotImplementedException();
         }
 
+        private void BackButtonPressed(object sender, RoutedEventArgs e)
+        {
+            //Check the needed flags in state here and jump to proper screen
+            Switcher.Switch(new LaunchScreen());
+        }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void HomeButtonPressed(object sender, RoutedEventArgs e)
         {
             Switcher.Switch(new LaunchScreen());
         }

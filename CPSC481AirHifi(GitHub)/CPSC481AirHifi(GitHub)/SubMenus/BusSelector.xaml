@@ -11,7 +11,16 @@
             <ColumnDefinition Width="79*"/>
         </Grid.ColumnDefinitions>
 
-        <Rectangle HorizontalAlignment="Left" Height="518" Margin="-46,-46,0,-45" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="246"/>
+        <Rectangle HorizontalAlignment="Left" Height="427" Margin="199,0,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.082"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
 
         <Rectangle HorizontalAlignment="Left" Height="70" Margin="8,244,0,0" Stroke="#FFCFF3B1" VerticalAlignment="Top" Width="191"/>
 
@@ -38,10 +47,6 @@
         <Label Content="Route 2B" HorizontalAlignment="Left" Margin="10,313,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
         <Label Content="Estimated time of arrival: 11 minutes" HorizontalAlignment="Left" Margin="10,337,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
         <Label Content="Select Route&#xA;&#xA;" HorizontalAlignment="Left" Margin="10,356,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
-        <Button Content="Button" HorizontalAlignment="Center" Margin="0,15,0,0" VerticalAlignment="Top" Width="30" Height="30" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Button_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="/CPSC481AirHifi(GitHub);component/Icon/icon_25954.png" Opacity="0.5"/>
-            </Button.Background>
-        </Button>
+        <Image HorizontalAlignment="Left" Height="30" Margin="85,15,0,0" VerticalAlignment="Top" Width="30" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_25954.png" MouseLeftButtonDown="BackButtonPress" Opacity="0.5"/>
     </Grid>
 </UserControl>

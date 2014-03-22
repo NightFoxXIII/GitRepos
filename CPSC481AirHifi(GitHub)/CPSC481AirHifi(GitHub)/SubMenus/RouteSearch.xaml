@@ -11,40 +11,15 @@
             <ColumnDefinition Width="79*"/>
         </Grid.ColumnDefinitions>
 
-        <Rectangle HorizontalAlignment="Left" Height="518" Margin="-46,-28,0,-63" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="246"/>
+        <Rectangle HorizontalAlignment="Left" Height="427" Margin="199,0,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1"/>
 
         <Rectangle HorizontalAlignment="Left" Height="70" Margin="8,262,0,0" Stroke="#FFCFF3B1" VerticalAlignment="Top" Width="191"/>
 
         <Rectangle HorizontalAlignment="Left" Height="70" Margin="8,192,0,0" Stroke="#FFFDF0B4" VerticalAlignment="Top" Width="191"/>
 
         <Rectangle HorizontalAlignment="Left" Height="70" Margin="8,122,0,0" Stroke="#FFF78080" VerticalAlignment="Top" Width="191"/>
-
-        <Button Content="tton" HorizontalAlignment="Center" Height="35" Margin="80,11,80,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.375,0.375" BorderBrush="{x:Null}" Foreground="{x:Null}" Opacity="0.5" Click="Button_Click_1">
-            <Button.Background>
-                <ImageBrush ImageSource="/CPSC481AirHifi(GitHub);component/Icon/icon_25954.png" Stretch="UniformToFill"/>
-            </Button.Background>
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleX="0.75" ScaleY="0.75"/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform X="-23.906" Y="1.094"/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
-        <Button Content="Button" HorizontalAlignment="Center" Height="35" Margin="80,11,80,0" VerticalAlignment="Top" Width="35" RenderTransformOrigin="0.5,0.5" BorderBrush="{x:Null}" Foreground="{x:Null}" Opacity="0.5" Click="Button_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="/CPSC481AirHifi(GitHub);component/Icon/icon_5593.png" Stretch="UniformToFill"/>
-            </Button.Background>
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform/>
-                    <TranslateTransform X="25"/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
+        <Image HorizontalAlignment="Center" Height="26" Margin="59,16,115,0" VerticalAlignment="Top" Width="26" RenderTransformOrigin="0.375,0.375" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_25954.png" MouseLeftButtonDown="BackButtonPressed" Opacity="0.5"/>
+        <Image HorizontalAlignment="Center" Height="35" Margin="104,11,60,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="0.375,0.375" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_5593.png" MouseLeftButtonDown="HomeButtonPressed" Opacity="0.5"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="152"/>
         <Label Content="From: Your location" HorizontalAlignment="Left" Height="26" Margin="10,65,0,0" VerticalAlignment="Top" Width="180" Foreground="#FF494949" FontFamily="Segoe UI Semilight"/>
         <Label Content="To: Your destination" HorizontalAlignment="Left" Height="26" Margin="10,91,0,0" VerticalAlignment="Top" Width="180" Foreground="#FF494949" FontFamily="Segoe UI Semilight"/>
