@@ -8,10 +8,9 @@
     <Grid Background="White">
         <DockPanel Height="Auto" Name="dockPanel1" Width="Auto" LastChildFill="True">
             <StackPanel Height="Auto" Name="stackPanel1" Width="200" Background="#9B17A7CB">
-                <Image Height="140" Name="taxi_ads" Stretch="Uniform" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/taxi_1.jpg" ImageFailed="taxi_ads_ImageFailed" />
-                <Separator Height="5" Name="separator1" Width="Auto" />
+                <Image Height="128" Name="taxi_ads" Stretch="Uniform" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/taxi_1.jpg" ImageFailed="taxi_ads_ImageFailed" />
                 <Border BorderBrush="Black" BorderThickness="0" Height="70" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged"/>
-                <StackPanel Height="208" Background="White">
+                <StackPanel Height="230" Background="White">
                     <Border BorderBrush="Black" BorderThickness="0" Height="80" Loaded="GreyhoundBoxLoaded"/>
                     <Border>
                         <Grid>
@@ -20,9 +19,10 @@
                         </Grid>
                     </Border>
                     <Rectangle Height="1" Stroke="#FFCDCDCD" Margin="15,0,0,0" HorizontalAlignment="Left" Width="175"/>
-                    <Label Content="Hotels" Background="{x:Null}" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0"/>
+                    <Label Content="Hotels" Background="{x:Null}" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,4,0,0"/>
                     <Label Content="Food" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0"/>
                     <Label Content="Events" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0"/>
+                    <ComboBox Height="23" x:Name="comboBox1" MinWidth="84" Width="172" Loaded="ComboBox_Loaded" SelectionChanged="comboBox1_SelectionChanged" Margin="18,0,0,0" BorderThickness="1,1,1,1" HorizontalAlignment="Left" />
                 </StackPanel>
             </StackPanel>
             <StackPanel Height="Auto" Name="stackPanel2" Width="200" DockPanel.Dock="Right" Background="#9B17A7CB">
@@ -31,15 +31,8 @@
                     <Rectangle Canvas.Left="0" Canvas.Top="0" Fill="#FFF51313" Height="134" MinWidth="1" Name="rectangle1" Stroke="Black" Width="20" />
                 </Canvas>
             </StackPanel>
-            <StackPanel Height="50" Name="stackPanel3" Width="Auto" DockPanel.Dock="Bottom" Orientation="Horizontal" Background="#82EFEF0F">
-                <Button Content="Hotels" Name="button2" Width="45" MinWidth="41" Margin="10,14,0,13" />
-                <Button Content="Food" Name="button3" Width="45" MinWidth="41" Margin="0,14,0,13" />
-                <Button Content="Events" Name="button4" Width="45" MinWidth="41" Margin="0,14,0,13" />
-                <Label Content="Search:" Height="28" Name="label1" MinWidth="41" />
-                <ComboBox Height="23" Name="comboBox1" MinWidth="84" Width="220" Loaded="ComboBox_Loaded" SelectionChanged="comboBox1_SelectionChanged" />
-            </StackPanel>
             <Button Height="Auto" Name="button1" Width="Auto" />
         </DockPanel>
-        <Rectangle Fill="#FFF5E013" HorizontalAlignment="Left" Height="128" Margin="0,299,0,0" Stroke="#FFF5E013" VerticalAlignment="Top" Width="10"/>
+        <Rectangle Fill="#FFF5E013" HorizontalAlignment="Left" Height="149" Margin="0,278,0,0" Stroke="#FFF5E013" VerticalAlignment="Top" Width="10"/>
     </Grid>
 </UserControl>
