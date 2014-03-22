@@ -15,7 +15,7 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="152"/>
         <Label Content="Bus Routes" HorizontalAlignment="Center" Height="34" Margin="0,65,-0.2,0" VerticalAlignment="Top" Width="89" Foreground="#FF494949" FontFamily="Segoe UI Semilight" FontSize="16"/>
         <Image HorizontalAlignment="Left" Height="427" VerticalAlignment="Top" Width="632" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="Both" Stretch="Fill" Grid.Column="1"/>
-        <Border Margin="0,104,0,253" MouseLeftButtonDown="Route1ASelected" BorderBrush="#FFF78080" BorderThickness="0" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
+        <Border Margin="0,104,0,253" MouseLeftButtonDown="Route1ASelected" BorderBrush="#FFF78080" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
             <Grid>
                 <Label Content="Route 1A" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
                 <Label Content="Estimated time of arrival: 17 minutes" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>

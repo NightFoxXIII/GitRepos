@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" d:DesignWidth="200" Height="80">
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="80" Stroke="#FFFD9067" VerticalAlignment="Top" Width="191" Canvas.Top="78" Canvas.Left="-224" Fill="White" Margin="9,0,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="191" Canvas.Top="78" Canvas.Left="-224" Fill="White" Margin="9,0,0,0"/>
         <Rectangle Fill="#FFF96C37" HorizontalAlignment="Left" Height="80" Stroke="#FFF96C37" VerticalAlignment="Top" Width="10" Canvas.Top="78" Canvas.Left="-232"/>
         <Label Content="Greyhound Route 112" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949" Canvas.Top="77" Canvas.Left="-222" Margin="10,0,0,0"/>
         <Label Content="To Edmonton" HorizontalAlignment="Left" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Canvas.Top="101" Canvas.Left="-222" Margin="10,23,0,0"/>

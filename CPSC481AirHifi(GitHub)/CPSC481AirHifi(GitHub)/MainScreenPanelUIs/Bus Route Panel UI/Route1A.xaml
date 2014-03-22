@@ -6,7 +6,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="70" d:DesignWidth="200">
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="70" Stroke="#FFF78080" VerticalAlignment="Top" Width="191" Canvas.Top="78" Canvas.Left="-224" Fill="White" Margin="9,0,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="191" Canvas.Top="78" Canvas.Left="-224" Fill="White" Margin="9,0,0,0"/>
         <Rectangle Fill="#FFEC4848" HorizontalAlignment="Left" Height="70" Stroke="#FFEC4848" VerticalAlignment="Top" Width="10" Canvas.Top="78" Canvas.Left="-232"/>
         <Label Content="Route 1A" HorizontalAlignment="Left" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949" Canvas.Top="77" Canvas.Left="-222" Margin="10,0,0,0"/>
         <Label Content="Estimated time of arrival: 17 minutes" HorizontalAlignment="Left" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Canvas.Top="101" Canvas.Left="-222" Margin="10,23,0,0"/>

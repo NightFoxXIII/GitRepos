@@ -36,6 +36,30 @@ namespace CPSC481AirHifi_GitHub_
             dispatchertimer.Start();
         }
 
+        private void BorderCovered(object sender, MouseEventArgs e)
+        {
+            var border = sender as Border;
+            border.BorderThickness = new Thickness(1);
+        }
+
+        private void BorderUncovered(object sender, MouseEventArgs e)
+        {
+            var border = sender as Border;
+            border.BorderThickness = new Thickness(0);
+        }
+
+        private void LabelCovered(object sender, MouseEventArgs e)
+        {
+            var label = sender as Label;
+            label.BorderThickness = new Thickness(1);
+        }
+
+        private void LabelUncovered(object sender, MouseEventArgs e)
+        {
+            var label = sender as Label;
+            label.BorderThickness = new Thickness(0);
+        }
+
         private void dispatchertimer_Tick(object sender, EventArgs e)
         {
             if (i >= 3)
@@ -82,6 +106,12 @@ namespace CPSC481AirHifi_GitHub_
         }
 
         private void BusSelectionChanged(object sender, RoutedEventArgs e)
+        {
+            session.setpreviousscreen("launchscreen");
+            Switcher.Switch(new BusSelector(), session);
+        }
+
+        private void HotelChanged(object sender, RoutedEventArgs e)
         {
             session.setpreviousscreen("launchscreen");
             Switcher.Switch(new BusSelector(), session);
