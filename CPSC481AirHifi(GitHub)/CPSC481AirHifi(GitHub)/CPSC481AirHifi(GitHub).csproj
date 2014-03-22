@@ -58,6 +58,15 @@
     <Compile Include="Bus Route Panel UI\Route1A.xaml.cs">
       <DependentUpon>Route1A.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Bus Route Panel UI\Route1B.xaml.cs">
+      <DependentUpon>Route1B.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Route Panel UI\Route2A.xaml.cs">
+      <DependentUpon>Route2A.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bus Route Panel UI\Route2B.xaml.cs">
+      <DependentUpon>Route2B.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubMenus\BusSelector.xaml.cs">
       <DependentUpon>BusSelector.xaml</DependentUpon>
     </Compile>
@@ -82,6 +91,18 @@
     </Compile>
     <Compile Include="Switcher.cs" />
     <Page Include="Bus Route Panel UI\Route1A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Bus Route Panel UI\Route1B.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Bus Route Panel UI\Route2A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Bus Route Panel UI\Route2B.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
