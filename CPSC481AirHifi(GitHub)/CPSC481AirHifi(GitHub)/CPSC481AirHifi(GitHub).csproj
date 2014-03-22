@@ -55,16 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Bus Route Panel UI\Route1A.xaml.cs">
+    <Compile Include="MainScreenPanelUIs\Greayhound Route Panel UI\DefaultGreyhoundRoute.xaml.cs">
+      <DependentUpon>DefaultGreyhoundRoute.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreenPanelUIs\Bus Route Panel UI\Route1A.xaml.cs">
       <DependentUpon>Route1A.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Bus Route Panel UI\Route1B.xaml.cs">
+    <Compile Include="MainScreenPanelUIs\Bus Route Panel UI\Route1B.xaml.cs">
       <DependentUpon>Route1B.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Bus Route Panel UI\Route2A.xaml.cs">
+    <Compile Include="MainScreenPanelUIs\Bus Route Panel UI\Route2A.xaml.cs">
       <DependentUpon>Route2A.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Bus Route Panel UI\Route2B.xaml.cs">
+    <Compile Include="MainScreenPanelUIs\Bus Route Panel UI\Route2B.xaml.cs">
       <DependentUpon>Route2B.xaml</DependentUpon>
     </Compile>
     <Compile Include="SubMenus\BusSelector.xaml.cs">
@@ -90,19 +93,23 @@
       <DependentUpon>canvas_weat.xaml</DependentUpon>
     </Compile>
     <Compile Include="Switcher.cs" />
-    <Page Include="Bus Route Panel UI\Route1A.xaml">
+    <Page Include="MainScreenPanelUIs\Greayhound Route Panel UI\DefaultGreyhoundRoute.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Bus Route Panel UI\Route1B.xaml">
+    <Page Include="MainScreenPanelUIs\Bus Route Panel UI\Route1A.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Bus Route Panel UI\Route2A.xaml">
+    <Page Include="MainScreenPanelUIs\Bus Route Panel UI\Route1B.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Bus Route Panel UI\Route2B.xaml">
+    <Page Include="MainScreenPanelUIs\Bus Route Panel UI\Route2A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainScreenPanelUIs\Bus Route Panel UI\Route2B.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -177,11 +184,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\Weather\" />
+    <Folder Include="MainScreenPanelUIs\Search Panel UI\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icon\icon_25954.png" />
     <Resource Include="Icon\icon_38229.png" />
     <Resource Include="Icon\icon_5593.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\icon_7462.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

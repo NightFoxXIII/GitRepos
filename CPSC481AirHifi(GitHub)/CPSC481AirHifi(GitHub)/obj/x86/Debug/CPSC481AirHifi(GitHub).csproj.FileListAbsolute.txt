@@ -27,9 +27,17 @@ C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(Git
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).exe
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).pdb
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).csprojResolveAssemblyReference.cache
-C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\Bus Route Panel UI\Route1A.baml
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\BusSelector.baml
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\HotelSelector.baml
-C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\Bus Route Panel UI\Route1A.g.cs
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\BusSelector.g.cs
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\HotelSelector.g.cs
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Bus Route Panel UI\Route1A.baml
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Bus Route Panel UI\Route1B.baml
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Bus Route Panel UI\Route2A.baml
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Bus Route Panel UI\Route2B.baml
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Bus Route Panel UI\Route1A.g.cs
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Bus Route Panel UI\Route1B.g.cs
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Bus Route Panel UI\Route2A.g.cs
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Bus Route Panel UI\Route2B.g.cs
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Greayhound Route Panel UI\DefaultGreyhoundRoute.baml
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Greayhound Route Panel UI\DefaultGreyhoundRoute.g.cs

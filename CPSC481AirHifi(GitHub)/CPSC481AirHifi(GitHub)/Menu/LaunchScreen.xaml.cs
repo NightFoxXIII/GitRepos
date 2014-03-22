@@ -34,6 +34,12 @@ namespace CPSC481AirHifi_GitHub_
             content.Child = new Route1A();
         }
 
+        private void GreyhoundBoxLoaded(object sender, RoutedEventArgs e)
+        {
+            var content = sender as Border;
+            content.Child = new DefaultGreyhoundRoute();
+        }
+
         private void ComboBox_Loaded(object sender, RoutedEventArgs e)
         {
             var comboBox = sender as ComboBox;

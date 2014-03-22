@@ -10,13 +10,20 @@
             <StackPanel Height="Auto" Name="stackPanel1" Width="200" Background="#9B17A7CB">
                 <Image Height="140" Name="taxi_ads" Stretch="Uniform" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/taxi_1.jpg" ImageFailed="taxi_ads_ImageFailed" />
                 <Separator Height="5" Name="separator1" Width="Auto" />
-                <Canvas Height="125" Name="canvas1" Width="Auto">
-                    <Button Content="Button" Height="125" Name="button5" Width="180" Canvas.Left="20" Canvas.Top="0" />
-                    <Rectangle Height="125" Name="rectangle_busCode" Stroke="Black" Width="20" Canvas.Left="0" Canvas.Top="0" Fill="#FFF51313" MinWidth="1" />
-                </Canvas>
-                <Separator Height="5" Name="separator2" Width="Auto" />
                 <Border BorderBrush="Black" BorderThickness="0" Height="70" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged"/>
-
+                <StackPanel Height="208" Background="White">
+                    <Border BorderBrush="Black" BorderThickness="0" Height="80" Loaded="GreyhoundBoxLoaded"/>
+                    <Border>
+                        <Grid>
+                            <Label Content="Search for" FontFamily="Segoe UI Semilight" FontSize="16" Foreground="#FF494949" Margin="12,0,23,0" />
+                            <Image HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="20" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_7462.png" Margin="168,7,0,0" Opacity="0.68"/>
+                        </Grid>
+                    </Border>
+                    <Rectangle Height="1" Stroke="#FFCDCDCD" Margin="15,0,0,0" HorizontalAlignment="Left" Width="175"/>
+                    <Label Content="Hotels" Background="{x:Null}" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0"/>
+                    <Label Content="Food" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0"/>
+                    <Label Content="Events" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0"/>
+                </StackPanel>
             </StackPanel>
             <StackPanel Height="Auto" Name="stackPanel2" Width="200" DockPanel.Dock="Right" Background="#9B17A7CB">
                 <Canvas Height="140" Name="canvas_weat" Width="Auto">
@@ -33,5 +40,6 @@
             </StackPanel>
             <Button Height="Auto" Name="button1" Width="Auto" />
         </DockPanel>
+        <Rectangle Fill="#FFF5E013" HorizontalAlignment="Left" Height="128" Margin="0,299,0,0" Stroke="#FFF5E013" VerticalAlignment="Top" Width="10"/>
     </Grid>
 </UserControl>
