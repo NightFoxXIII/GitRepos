@@ -27,10 +27,23 @@ namespace CPSC481AirHifi_GitHub_
             InitializeComponent();
         }
 
+        private void BusBoxLoaded(object sender, RoutedEventArgs e)
+        {
+            var content = sender as Border;
+            //A case will be here to determine wich specific UI is loaded
+            content.Child = new Route1A();
+        }
+
         private void ComboBox_Loaded(object sender, RoutedEventArgs e)
         {
             var comboBox = sender as ComboBox;
             comboBox.ItemsSource = comboboxlist;
+        }
+
+        private void BusSelectionChanged(object sender, RoutedEventArgs e)
+        {
+            //Set the needed flags in state here
+            Switcher.Switch(new BusSelector());
         }
 
         private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)

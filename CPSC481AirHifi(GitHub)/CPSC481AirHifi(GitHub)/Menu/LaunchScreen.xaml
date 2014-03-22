@@ -15,6 +15,8 @@
                     <Rectangle Height="125" Name="rectangle_busCode" Stroke="Black" Width="20" Canvas.Left="0" Canvas.Top="0" Fill="#FFF51313" MinWidth="1" />
                 </Canvas>
                 <Separator Height="5" Name="separator2" Width="Auto" />
+                <Border BorderBrush="Black" BorderThickness="0" Height="70" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged"/>
+
             </StackPanel>
             <StackPanel Height="Auto" Name="stackPanel2" Width="200" DockPanel.Dock="Right" Background="#9B17A7CB">
                 <Canvas Height="140" Name="canvas_weat" Width="Auto">

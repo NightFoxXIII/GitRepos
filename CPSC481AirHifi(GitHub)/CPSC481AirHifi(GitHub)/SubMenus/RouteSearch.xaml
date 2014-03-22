@@ -46,7 +46,7 @@
             </Button.RenderTransform>
         </Button>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="152"/>
-        <Label Content="From: Somewhere" HorizontalAlignment="Left" Height="26" Margin="10,65,0,0" VerticalAlignment="Top" Width="180" Foreground="#FF494949" FontFamily="Segoe UI Semilight"/>
+        <Label Content="From: Your location" HorizontalAlignment="Left" Height="26" Margin="10,65,0,0" VerticalAlignment="Top" Width="180" Foreground="#FF494949" FontFamily="Segoe UI Semilight"/>
         <Label Content="To: Your destination" HorizontalAlignment="Left" Height="26" Margin="10,91,0,0" VerticalAlignment="Top" Width="180" Foreground="#FF494949" FontFamily="Segoe UI Semilight"/>
         <Rectangle Fill="#FFEC4848" HorizontalAlignment="Left" Height="70" Margin="0,122,0,0" Stroke="#FFEC4848" VerticalAlignment="Top" Width="10"/>
         <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="70" Margin="0,192,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>

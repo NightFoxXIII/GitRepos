@@ -1,5 +1,5 @@
 ﻿<Window x:Class="CPSC481AirHifi_GitHub_.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="427" Width="832" ResizeMode="NoResize">
+        Title="MainWindow" Height="466" Width="848" ResizeMode="NoResize">
 </Window>

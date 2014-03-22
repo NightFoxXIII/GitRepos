@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Bus Route Panel UI\Route1A.xaml.cs">
+      <DependentUpon>Route1A.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubMenus\BusSelector.xaml.cs">
       <DependentUpon>BusSelector.xaml</DependentUpon>
     </Compile>
@@ -78,6 +81,10 @@
       <DependentUpon>canvas_weat.xaml</DependentUpon>
     </Compile>
     <Compile Include="Switcher.cs" />
+    <Page Include="Bus Route Panel UI\Route1A.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SubMenus\BusSelector.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
