@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPSC481AirHifi(GitHub)", "CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub).csproj", "{FF3783B6-986C-4B0A-9A14-A83640CB9C2A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFPageSwitch", "..\WPFPageSwitcher\WPFPageSwitch\WPFPageSwitch.csproj", "{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,16 +25,6 @@ Global
 		{FF3783B6-986C-4B0A-9A14-A83640CB9C2A}.Release|Mixed Platforms.Build.0 = Release|x86
 		{FF3783B6-986C-4B0A-9A14-A83640CB9C2A}.Release|x86.ActiveCfg = Release|x86
 		{FF3783B6-986C-4B0A-9A14-A83640CB9C2A}.Release|x86.Build.0 = Release|x86
-		{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{66F0DBCF-9C32-4B01-B6D1-71850B7A7A95}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

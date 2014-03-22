@@ -51,16 +51,16 @@
         <Rectangle Fill="#FFEC4848" HorizontalAlignment="Left" Height="70" Margin="0,122,0,0" Stroke="#FFEC4848" VerticalAlignment="Top" Width="10"/>
         <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="70" Margin="0,192,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
         <Rectangle Fill="#FF73E452" HorizontalAlignment="Left" Height="70" Margin="0,262,0,0" Stroke="#FF73E452" VerticalAlignment="Top" Width="10"/>
-        <Image Grid.Column="1" HorizontalAlignment="Left" Height="427" VerticalAlignment="Top" Width="632" OpacityMask="{x:Null}" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="Both" Stretch="Fill"/>
-        <Label Content="By Vehicle" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" TextOptions.TextHintingMode="Fixed" Cursor="None" Foreground="#FF494949"/>
-        <Label Content="Estimated time of arrival: x minutes" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Cursor="None" Foreground="#FF7E7E7E"/>
-        <Label Content="Contact a taxi service&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Cursor="None" Foreground="#FF7E7E7E"/>
-        <Label Content="By Public Transit" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" TextOptions.TextHintingMode="Fixed" Cursor="None" Foreground="#FF494949"/>
-        <Label Content="Estimated time of arrival: x minutes" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Cursor="None" Foreground="#FF7E7E7E"/>
-        <Label Content="Show transit schedual&#xA;" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="166" FontSize="10" FontFamily="Segoe UI Light" Cursor="None" Foreground="#FF7E7E7E"/>
-        <Label Content="By Foot" HorizontalAlignment="Left" Margin="10,261,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" TextOptions.TextHintingMode="Fixed" Cursor="None" Foreground="#FF494949"/>
-        <Label Content="Estimated time of arrival: x minutes" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Cursor="None" Foreground="#FF7E7E7E"/>
-        <Label Content="Show route&#xA;" HorizontalAlignment="Left" Margin="10,304,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Cursor="None" Foreground="#FF7E7E7E"/>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="427" VerticalAlignment="Top" Width="632" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="Both" Stretch="Fill"/>
+        <Label Content="By Vehicle" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
+        <Label Content="Estimated time of arrival: x minutes" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
+        <Label Content="Contact a taxi service&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
+        <Label Content="By Public Transit" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
+        <Label Content="Estimated time of arrival: x minutes" HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
+        <Label Content="Show transit schedual&#xA;" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="166" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
+        <Label Content="By Foot" HorizontalAlignment="Left" Margin="10,261,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
+        <Label Content="Estimated time of arrival: x minutes" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
+        <Label Content="Show route&#xA;" HorizontalAlignment="Left" Margin="10,304,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
 
     </Grid>
 </UserControl>
