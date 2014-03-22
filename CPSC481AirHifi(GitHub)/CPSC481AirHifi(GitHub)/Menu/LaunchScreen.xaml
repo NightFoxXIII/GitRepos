@@ -27,8 +27,7 @@
             </StackPanel>
             <StackPanel Height="Auto" Name="stackPanel2" Width="200" DockPanel.Dock="Right" Background="#9B17A7CB">
                 <Canvas Height="140" Name="canvas_weat" Width="Auto">
-                    <Image Canvas.Left="112" Canvas.Top="0" Height="140" Name="image1" Stretch="Fill" Width="88" />
-                    <Rectangle Canvas.Left="0" Canvas.Top="0" Fill="#FFF51313" Height="134" MinWidth="1" Name="rectangle1" Stroke="Black" Width="20" />
+                    <Image Canvas.Left="0" Canvas.Top="0" Height="140" Name="image_weather1" Stretch="Fill" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/Weather/weat_img1.png" />
                 </Canvas>
             </StackPanel>
             <Button Height="Auto" Name="button1" Width="Auto" />

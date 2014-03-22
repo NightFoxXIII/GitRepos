@@ -183,7 +183,6 @@
     <Resource Include="Images\taxi_3.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\Weather\" />
     <Folder Include="MainScreenPanelUIs\Search Panel UI\" />
   </ItemGroup>
   <ItemGroup>
@@ -193,6 +192,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icon\icon_7462.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Weather\weat_img1.png" />
+    <Resource Include="Images\Weather\weat_img2.png" />
+    <Resource Include="Images\Weather\weat_img3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

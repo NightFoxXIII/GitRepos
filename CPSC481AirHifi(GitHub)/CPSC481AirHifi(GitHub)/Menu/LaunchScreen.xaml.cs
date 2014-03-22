@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace CPSC481AirHifi_GitHub_
 {
@@ -22,9 +23,27 @@ namespace CPSC481AirHifi_GitHub_
 
         List<string> comboboxlist = new List<string>(new String[] { "ShortRoute", "MediumRoute", "LongRoute" });
 
+        private int i = 0;
         public LaunchScreen()
         {
             InitializeComponent();
+            DispatcherTimer dispatchertimer = new DispatcherTimer();
+
+            dispatchertimer.Tick += new EventHandler(dispatchertimer_Tick);
+            dispatchertimer.Interval = new TimeSpan(0, 0, 2);
+            dispatchertimer.Start();
+        }
+
+        private void dispatchertimer_Tick(object sender, EventArgs e)
+        {
+            if (i >= 3)
+                i = 0;
+            i++;
+            image_weather1.Source = (ImageSource)new BitmapImage(
+                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Weather/weat_img" + (i % 100) + ".png", UriKind.RelativeOrAbsolute));
+
+            taxi_ads.Source = (ImageSource)new BitmapImage(
+                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/taxi_" + (i % 100) + ".jpg", UriKind.RelativeOrAbsolute));
         }
 
         private void BusBoxLoaded(object sender, RoutedEventArgs e)
