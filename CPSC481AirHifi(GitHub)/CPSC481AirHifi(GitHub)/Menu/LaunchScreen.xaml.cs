@@ -51,13 +51,13 @@ namespace CPSC481AirHifi_GitHub_
         private void LabelCovered(object sender, MouseEventArgs e)
         {
             var label = sender as Label;
-            label.BorderThickness = new Thickness(1);
+            label.FontSize = 14;
         }
 
         private void LabelUncovered(object sender, MouseEventArgs e)
         {
             var label = sender as Label;
-            label.BorderThickness = new Thickness(0);
+            label.FontSize = 12;
         }
 
         private void dispatchertimer_Tick(object sender, EventArgs e)
@@ -72,6 +72,7 @@ namespace CPSC481AirHifi_GitHub_
                 new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/taxi_" + (i % 100) + ".jpg", UriKind.RelativeOrAbsolute));
         }
 
+        #region Loaders
         private void BusBoxLoaded(object sender, RoutedEventArgs e)
         {
             var content = sender as Border;
@@ -104,17 +105,35 @@ namespace CPSC481AirHifi_GitHub_
             var comboBox = sender as ComboBox;
             comboBox.ItemsSource = comboboxlist;
         }
+        #endregion
 
+        #region ISwitchable Members
         private void BusSelectionChanged(object sender, RoutedEventArgs e)
         {
             session.setpreviousscreen("launchscreen");
             Switcher.Switch(new BusSelector(), session);
         }
 
-        private void HotelChanged(object sender, RoutedEventArgs e)
+        private void HotelSearch(object sender, RoutedEventArgs e)
         {
             session.setpreviousscreen("launchscreen");
-            Switcher.Switch(new BusSelector(), session);
+            Switcher.Switch(new HotelSelector(), session);
+        }
+
+        private void FoodSearch(object sender, RoutedEventArgs e)
+        {
+            return;
+        }
+
+        private void EventSearch(object sender, RoutedEventArgs e)
+        {
+            return;
+        }
+
+        private void DirectionsSearch(object sender, RoutedEventArgs e)
+        {
+            session.setpreviousscreen("launchscreen");
+            Switcher.Switch(new RouteSearch(), session);
         }
 
         private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -131,7 +150,7 @@ namespace CPSC481AirHifi_GitHub_
 
         }
 
-        #region ISwitchable Members
+
         public void UtilizeState(Session state)
         {
             session = state;

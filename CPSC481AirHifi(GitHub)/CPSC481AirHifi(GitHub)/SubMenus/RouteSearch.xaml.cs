@@ -26,12 +26,7 @@ namespace CPSC481AirHifi_GitHub_
             InitializeComponent();
         }
 
-        #region ISwitchable Members
-        public void UtilizeState(Session state)
-        {
-            session = state;
-        }
-
+        #region Window Transitions
         private void BackButtonPressed(object sender, RoutedEventArgs e)
         {
             //Check the needed flags in state here and jump to proper screen
@@ -42,10 +37,12 @@ namespace CPSC481AirHifi_GitHub_
         {
             Switcher.Switch(new LaunchScreen());
         }
+        #endregion
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        #region ISwitchable Members
+        public void UtilizeState(Session state)
         {
-
+            session = state;
         }
         #endregion
 

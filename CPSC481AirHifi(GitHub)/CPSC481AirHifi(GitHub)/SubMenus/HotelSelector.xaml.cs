@@ -17,11 +17,28 @@ namespace CPSC481AirHifi_GitHub_
     /// <summary>
     /// Interaction logic for HotelSelector.xaml
     /// </summary>
-    public partial class HotelSelector : UserControl
+    public partial class HotelSelector : UserControl, ISwitchable
     {
+        private Session session;
+
         public HotelSelector()
         {
             InitializeComponent();
         }
+
+        #region Mouseover Events
+
+        #endregion
+
+        #region Window Transitions
+
+        #endregion
+
+        #region ISwitchable Members
+        public void UtilizeState(Session state)
+        {
+            session = state;
+        }
+        #endregion
     }
 }

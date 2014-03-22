@@ -10,8 +10,6 @@
             <ColumnDefinition Width="25*"/>
             <ColumnDefinition Width="79*"/>
         </Grid.ColumnDefinitions>
-
-        <Rectangle HorizontalAlignment="Left" Height="427" Margin="199,0,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="152"/>
         <Label Content="Bus Routes" HorizontalAlignment="Center" Height="34" Margin="0,65,-0.2,0" VerticalAlignment="Top" Width="89" Foreground="#FF494949" FontFamily="Segoe UI Semilight" FontSize="16"/>
         <Image HorizontalAlignment="Left" Height="427" VerticalAlignment="Top" Width="632" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="Both" Stretch="Fill" Grid.Column="1"/>
@@ -48,5 +46,6 @@
             </Grid>
         </Border>
         <Image HorizontalAlignment="Left" Height="30" Margin="85,15,0,0" VerticalAlignment="Top" Width="30" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_25954.png" MouseLeftButtonDown="BackButtonPress" Opacity="0.5"/>
+        <Rectangle HorizontalAlignment="Left" Height="427" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5" Grid.Column="1"/>
     </Grid>
 </UserControl>

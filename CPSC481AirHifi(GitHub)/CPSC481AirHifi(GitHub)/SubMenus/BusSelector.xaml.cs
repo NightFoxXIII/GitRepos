@@ -25,12 +25,7 @@ namespace CPSC481AirHifi_GitHub_
             InitializeComponent();
         }
 
-        #region ISwitchable Members
-        public void UtilizeState(Session state)
-        {
-            session = state;
-        }
-
+        #region Window Transitions
         private void BackButtonPress(object sender, RoutedEventArgs e)
         {
             Switcher.Switch(new LaunchScreen(), session);
@@ -40,18 +35,6 @@ namespace CPSC481AirHifi_GitHub_
         {
             session.setbusroute("Route1A");
             Switcher.Switch(new LaunchScreen(), session);
-        }
-
-        private void BorderCovered(object sender, MouseEventArgs e)
-        {
-            var border = sender as Border;
-            border.BorderThickness = new Thickness(1);
-        }
-
-        private void BorderUncovered(object sender, MouseEventArgs e)
-        {
-            var border = sender as Border;
-            border.BorderThickness = new Thickness(0);
         }
 
         private void Route1BSelected(object sender, MouseButtonEventArgs e)
@@ -70,6 +53,27 @@ namespace CPSC481AirHifi_GitHub_
         {
             session.setbusroute("Route2B");
             Switcher.Switch(new LaunchScreen(), session);
+        }
+        #endregion
+
+        #region Mouseover Events
+        private void BorderCovered(object sender, MouseEventArgs e)
+        {
+            var border = sender as Border;
+            border.BorderThickness = new Thickness(1);
+        }
+
+        private void BorderUncovered(object sender, MouseEventArgs e)
+        {
+            var border = sender as Border;
+            border.BorderThickness = new Thickness(0);
+        }
+        #endregion
+
+        #region ISwitchable Members
+        public void UtilizeState(Session state)
+        {
+            session = state;
         }
         #endregion
     }

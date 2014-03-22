@@ -10,14 +10,6 @@
             <ColumnDefinition Width="25*"/>
             <ColumnDefinition Width="79*"/>
         </Grid.ColumnDefinitions>
-
-        <Rectangle HorizontalAlignment="Left" Height="427" Margin="199,0,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1"/>
-
-        <Rectangle HorizontalAlignment="Left" Height="70" Margin="8,262,0,0" Stroke="#FFCFF3B1" VerticalAlignment="Top" Width="191"/>
-
-        <Rectangle HorizontalAlignment="Left" Height="70" Margin="8,192,0,0" Stroke="#FFFDF0B4" VerticalAlignment="Top" Width="191"/>
-
-        <Rectangle HorizontalAlignment="Left" Height="70" Margin="8,122,0,0" Stroke="#FFF78080" VerticalAlignment="Top" Width="191"/>
         <Image HorizontalAlignment="Center" Height="26" Margin="59,16,115,0" VerticalAlignment="Top" Width="26" RenderTransformOrigin="0.375,0.375" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_25954.png" MouseLeftButtonDown="BackButtonPressed" Opacity="0.5"/>
         <Image HorizontalAlignment="Center" Height="35" Margin="104,11,60,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="0.375,0.375" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_5593.png" MouseLeftButtonDown="HomeButtonPressed" Opacity="0.5"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="152"/>
@@ -36,6 +28,7 @@
         <Label Content="By Foot" HorizontalAlignment="Left" Margin="10,261,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
         <Label Content="Estimated time of arrival: x minutes" HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
         <Label Content="Show route&#xA;" HorizontalAlignment="Left" Margin="10,304,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
+        <Rectangle HorizontalAlignment="Left" Height="427" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1" Grid.Column="1"/>
 
     </Grid>
 </UserControl>
