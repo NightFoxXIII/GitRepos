@@ -27,12 +27,62 @@ namespace CPSC481AirHifi_GitHub_
         }
 
         #region Loaders
-        public void Destination(object sender, RoutedEventArgs e)
+        public void Destination (object sender, RoutedEventArgs e)
         {
             var label = sender as Label;
             label.Content = "To: " + session.getdestination();
         }
 
+        public void TaxiTime(object sender, RoutedEventArgs e)
+        {
+            var label = sender as Label;
+            switch (session.getdestination())
+            {
+                case "ShortRoute":
+                    label.Content = "Estimated time of arrival: 2 minutes";
+                    break;
+                case "MediumRoute":
+                    label.Content = "Estimated time of arrival: 5 minutes";
+                    break;
+                case "LongRoute":
+                    label.Content = "Estimated time of arrival: 16 minutes";
+                    break;
+            }
+        }
+
+         public void TransitTime(object sender, RoutedEventArgs e)
+        {
+            var label = sender as Label;
+            switch (session.getdestination())
+            {
+                case "ShortRoute":
+                    label.Content = "Estimated time of arrival: 3 minutes";
+                    break;
+                case "MediumRoute":
+                    label.Content = "Estimated time of arrival: 11 minutes";
+                    break;
+                case "LongRoute":
+                    label.Content = "Estimated time of arrival: 22 minutes";
+                    break;
+            }
+        }
+
+        public void FootTime(object sender, RoutedEventArgs e)
+        {
+            var label = sender as Label;
+            switch (session.getdestination())
+            {
+                case "ShortRoute":
+                    label.Content = "Estimated time of arrival: 2 minutes";
+                    break;
+                case "MediumRoute":
+                    label.Content = "Estimated time of arrival: 32 minutes";
+                    break;
+                case "LongRoute":
+                    label.Content = "Estimated time of arrival: 1 h 23 m";
+                    break;
+            }
+        }
         #endregion
 
         #region Window Transitions
