@@ -10,33 +10,43 @@ namespace CPSC481AirHifi_GitHub_
         private string previousscreen;
         private string busroute = "Route1A";
         private string hotel;
+        private string destination;
+        
+        public void setdestination (string selection)
+        {
+            destination = selection;
+        }
 
-        public void sethotel(string selection)
+        public string getdestination()
+        {
+            return destination;
+        }
+        public void sethotel (string selection)
         {
             hotel = selection;
         }
 
-        public string gethotel()
+        public string gethotel ()
         {
             return hotel;
         }
 
-        public void setbusroute(string selection)
+        public void setbusroute (string selection)
         {
             busroute = selection;
         }
 
-        public string getbusroute()
+        public string getbusroute ()
         {
             return busroute;
         }
 
-        public void setpreviousscreen(string currentscreen)
+        public void setpreviousscreen (string currentscreen)
         {
             previousscreen = currentscreen;
         }
 
-        public string getpreviousscreen()
+        public string getpreviousscreen ()
         {
             return previousscreen;
         }

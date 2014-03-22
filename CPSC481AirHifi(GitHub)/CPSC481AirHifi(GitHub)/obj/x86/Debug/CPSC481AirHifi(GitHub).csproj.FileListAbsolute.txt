@@ -41,3 +41,5 @@ C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(Git
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Bus Route Panel UI\Route2B.g.cs
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Greayhound Route Panel UI\DefaultGreyhoundRoute.baml
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Greayhound Route Panel UI\DefaultGreyhoundRoute.g.cs
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\RouteSearchSplashScreen.baml
+C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\RouteSearchSplashScreen.g.cs

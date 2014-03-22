@@ -26,16 +26,24 @@ namespace CPSC481AirHifi_GitHub_
             InitializeComponent();
         }
 
+        #region Loaders
+        public void Destination(object sender, RoutedEventArgs e)
+        {
+            var label = sender as Label;
+            label.Content = "To: " + session.getdestination();
+        }
+
+        #endregion
+
         #region Window Transitions
         private void BackButtonPressed(object sender, RoutedEventArgs e)
         {
-            //Check the needed flags in state here and jump to proper screen
-            Switcher.Switch(new LaunchScreen());
+            Switcher.Switch(new RouteSearchSplashScreen(), session);
         }
 
         private void HomeButtonPressed(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new LaunchScreen());
+            Switcher.Switch(new LaunchScreen(), session);
         }
         #endregion
 

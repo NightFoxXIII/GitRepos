@@ -20,8 +20,6 @@ namespace CPSC481AirHifi_GitHub_
     /// </summary>
     public partial class LaunchScreen : UserControl, ISwitchable
     {
-
-        List<string> comboboxlist = new List<string>(new String[] { "ShortRoute", "MediumRoute", "LongRoute" });
         private Session session = new Session();
         private int i = 0;
 
@@ -36,6 +34,7 @@ namespace CPSC481AirHifi_GitHub_
             dispatchertimer.Start();
         }
 
+        #region Mouseover Events
         private void BorderCovered(object sender, MouseEventArgs e)
         {
             var border = sender as Border;
@@ -59,6 +58,7 @@ namespace CPSC481AirHifi_GitHub_
             var label = sender as Label;
             label.FontSize = 12;
         }
+        #endregion
 
         private void dispatchertimer_Tick(object sender, EventArgs e)
         {
@@ -70,6 +70,11 @@ namespace CPSC481AirHifi_GitHub_
 
             taxi_ads.Source = (ImageSource)new BitmapImage(
                 new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/taxi_" + (i % 100) + ".jpg", UriKind.RelativeOrAbsolute));
+        }
+
+        private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
         }
 
         #region Loaders
@@ -99,15 +104,9 @@ namespace CPSC481AirHifi_GitHub_
             var content = sender as Border;
             content.Child = new DefaultGreyhoundRoute();
         }
-
-        private void ComboBox_Loaded(object sender, RoutedEventArgs e)
-        {
-            var comboBox = sender as ComboBox;
-            comboBox.ItemsSource = comboboxlist;
-        }
         #endregion
 
-        #region ISwitchable Members
+        #region Window Transitions
         private void BusSelectionChanged(object sender, RoutedEventArgs e)
         {
             session.setpreviousscreen("launchscreen");
@@ -133,32 +132,14 @@ namespace CPSC481AirHifi_GitHub_
         private void DirectionsSearch(object sender, RoutedEventArgs e)
         {
             session.setpreviousscreen("launchscreen");
-            Switcher.Switch(new RouteSearch(), session);
+            Switcher.Switch(new RouteSearchSplashScreen(), session);
         }
+        #endregion
 
-        private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var comboBox = sender as ComboBox;
-            string value = comboBox.SelectedItem as string;
-            //The code to set the direction searched should be here
-            session.setpreviousscreen("launchscreen");
-            Switcher.Switch(new RouteSearch(), session); 
-        }
-
-        private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)
-        {
-
-        }
-
-
+        #region ISwitchable Members
         public void UtilizeState(Session state)
         {
             session = state;
-        }
-
-        public void UtilizeState(object state)
-        {
-            throw new NotImplementedException();
         }
         #endregion
 
