@@ -55,11 +55,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SubMenus\BusSelector.xaml.cs">
+      <DependentUpon>BusSelector.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Component1.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Component1.Designer.cs">
       <DependentUpon>Component1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubMenus\HotelSelector.xaml.cs">
+      <DependentUpon>HotelSelector.xaml</DependentUpon>
     </Compile>
     <Compile Include="ISwitchable.cs" />
     <Compile Include="Menu\LaunchScreen.xaml.cs">
@@ -72,6 +78,14 @@
       <DependentUpon>canvas_weat.xaml</DependentUpon>
     </Compile>
     <Compile Include="Switcher.cs" />
+    <Page Include="SubMenus\BusSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubMenus\HotelSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Menu\LaunchScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -5,9 +5,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System;
-using System.Windows;
-using System.Windows.Controls;
+
 
 namespace CPSC481AirHifi_GitHub_
 {
