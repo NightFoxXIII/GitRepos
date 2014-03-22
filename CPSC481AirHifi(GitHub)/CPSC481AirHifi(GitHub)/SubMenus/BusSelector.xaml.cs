@@ -17,31 +17,61 @@ namespace CPSC481AirHifi_GitHub_
     /// <summary>
     /// Interaction logic for BusSelector.xaml
     /// </summary>
-    public partial class BusSelector : UserControl
+    public partial class BusSelector : UserControl, ISwitchable
     {
+        private Session session;
         public BusSelector()
         {
             InitializeComponent();
         }
 
         #region ISwitchable Members
-        public void UtilizeState(object state)
+        public void UtilizeState(Session state)
         {
-            throw new NotImplementedException();
+            session = state;
         }
 
         private void BackButtonPress(object sender, RoutedEventArgs e)
         {
-            //Set the needed flags in state here
-            Switcher.Switch(new LaunchScreen());
+            Switcher.Switch(new LaunchScreen(), session);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Route1ASelected(object sender, MouseButtonEventArgs e)
         {
-            Switcher.Switch(new LaunchScreen());
+            session.setbusroute("Route1A");
+            Switcher.Switch(new LaunchScreen(), session);
+        }
+
+        private void BorderCovered(object sender, MouseEventArgs e)
+        {
+            var border = sender as Border;
+            border.BorderThickness = new Thickness(1);
+        }
+
+        private void BorderUncovered(object sender, MouseEventArgs e)
+        {
+            var border = sender as Border;
+            border.BorderThickness = new Thickness(0);
+        }
+
+        private void Route1BSelected(object sender, MouseButtonEventArgs e)
+        {
+            session.setbusroute("Route1B");
+            Switcher.Switch(new LaunchScreen(), session);
+        }
+
+        private void Route2ASelected(object sender, MouseButtonEventArgs e)
+        {
+            session.setbusroute("Route2A");
+            Switcher.Switch(new LaunchScreen(), session);
+        }
+
+        private void Route2BSelected(object sender, MouseButtonEventArgs e)
+        {
+            session.setbusroute("Route2B");
+            Switcher.Switch(new LaunchScreen(), session);
         }
         #endregion
-
     }
 }
 

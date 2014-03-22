@@ -11,7 +11,7 @@ namespace CPSC481AirHifi_GitHub_
             window.Navigate(newPage);
     	}
 
-    	public static void Switch(UserControl newPage, object state)
+    	public static void Switch(UserControl newPage, Session state)
     	{
             window.Navigate(newPage, state);
     	}

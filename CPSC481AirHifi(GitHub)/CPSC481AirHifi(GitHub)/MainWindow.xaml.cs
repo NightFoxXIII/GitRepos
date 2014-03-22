@@ -26,7 +26,7 @@ namespace CPSC481AirHifi_GitHub_
             this.Content = nextPage;
         }
 
-        public void Navigate(UserControl nextPage, object state)
+        public void Navigate(UserControl nextPage, Session state)
         {
             this.Content = nextPage;
             ISwitchable s = nextPage as ISwitchable;

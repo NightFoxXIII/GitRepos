@@ -19,15 +19,17 @@ namespace CPSC481AirHifi_GitHub_
     /// </summary>
     public partial class RouteSearch : UserControl, ISwitchable
     {
+        private Session session;
+
         public RouteSearch()
         {
             InitializeComponent();
         }
 
         #region ISwitchable Members
-        public void UtilizeState(object state)
+        public void UtilizeState(Session state)
         {
-            throw new NotImplementedException();
+            session = state;
         }
 
         private void BackButtonPressed(object sender, RoutedEventArgs e)

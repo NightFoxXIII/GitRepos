@@ -22,8 +22,10 @@ namespace CPSC481AirHifi_GitHub_
     {
 
         List<string> comboboxlist = new List<string>(new String[] { "ShortRoute", "MediumRoute", "LongRoute" });
-
+        private Session session = new Session();
         private int i = 0;
+
+
         public LaunchScreen()
         {
             InitializeComponent();
@@ -49,8 +51,22 @@ namespace CPSC481AirHifi_GitHub_
         private void BusBoxLoaded(object sender, RoutedEventArgs e)
         {
             var content = sender as Border;
-            //A case will be here to determine wich specific UI is loaded
-            content.Child = new Route1A();
+            switch (session.getbusroute())
+            {
+                case "Route1A":
+                    content.Child = new Route1A();
+                    break;
+                case "Route1B":
+                    content.Child = new Route1B();
+                    break;
+                case "Route2A":
+                    content.Child = new Route2A();
+                    break;
+                case "Route2B":
+                    content.Child = new Route2B();
+                    break;
+            }
+
         }
 
         private void GreyhoundBoxLoaded(object sender, RoutedEventArgs e)
@@ -67,16 +83,17 @@ namespace CPSC481AirHifi_GitHub_
 
         private void BusSelectionChanged(object sender, RoutedEventArgs e)
         {
-            //Set the needed flags in state here
-            Switcher.Switch(new BusSelector());
+            session.setpreviousscreen("launchscreen");
+            Switcher.Switch(new BusSelector(), session);
         }
 
         private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var comboBox = sender as ComboBox;
             string value = comboBox.SelectedItem as string;
-            //Lines to feed the information into the state so that routesearch displays correctly
-            Switcher.Switch(new RouteSearch()); //The instance were the object state as second param will be used here
+            //The code to set the direction searched should be here
+            session.setpreviousscreen("launchscreen");
+            Switcher.Switch(new RouteSearch(), session); 
         }
 
         private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)
@@ -85,6 +102,11 @@ namespace CPSC481AirHifi_GitHub_
         }
 
         #region ISwitchable Members
+        public void UtilizeState(Session state)
+        {
+            session = state;
+        }
+
         public void UtilizeState(object state)
         {
             throw new NotImplementedException();

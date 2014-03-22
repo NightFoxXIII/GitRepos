@@ -70,6 +70,7 @@
     <Compile Include="MainScreenPanelUIs\Bus Route Panel UI\Route2B.xaml.cs">
       <DependentUpon>Route2B.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Session.cs" />
     <Compile Include="SubMenus\BusSelector.xaml.cs">
       <DependentUpon>BusSelector.xaml</DependentUpon>
     </Compile>
