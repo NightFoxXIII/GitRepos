@@ -7,10 +7,9 @@
              d:DesignHeight="427" d:DesignWidth="832">
     <Grid Background="White">
         <DockPanel Height="Auto" Name="dockPanel1" Width="Auto" LastChildFill="True">
-            <StackPanel Height="Auto" Name="stackPanel1" Width="200" Background="#9B17A7CB">
+            <StackPanel Height="Auto" Name="stackPanel1" Width="200" Background="#9BFFFFFF">
                 <Image Height="128" Name="taxi_ads" Stretch="Uniform" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/taxi_1.jpg" ImageFailed="taxi_ads_ImageFailed" />
                 <Border BorderBrush="Black" BorderThickness="0" Height="70" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged"/>
-                <StackPanel Height="230" Background="White">
                     <Border BorderBrush="Black" BorderThickness="0" Height="80" Loaded="GreyhoundBoxLoaded"/>
                     <Border>
                         <Grid>
@@ -24,7 +23,6 @@
                     <Label Content="Events" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0"/>
                     <ComboBox Height="23" x:Name="comboBox1" MinWidth="84" Width="172" Loaded="ComboBox_Loaded" SelectionChanged="comboBox1_SelectionChanged" Margin="18,0,0,0" BorderThickness="1,1,1,1" HorizontalAlignment="Left" />
                 </StackPanel>
-            </StackPanel>
             <StackPanel Height="Auto" Name="stackPanel2" Width="200" DockPanel.Dock="Right" Background="#9B17A7CB">
                 <Canvas Height="140" Name="canvas_weat" Width="Auto">
                     <Image Canvas.Left="0" Canvas.Top="0" Height="140" Name="image_weather1" Stretch="Fill" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/Weather/weat_img1.png" />
