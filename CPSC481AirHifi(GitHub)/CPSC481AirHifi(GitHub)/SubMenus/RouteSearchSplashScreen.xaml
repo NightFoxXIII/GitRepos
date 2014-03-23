@@ -10,8 +10,7 @@
             <ColumnDefinition Width="25*"/>
             <ColumnDefinition Width="79*"/>
         </Grid.ColumnDefinitions>
-        <Image HorizontalAlignment="Center" Height="26" Margin="59,16,115,0" VerticalAlignment="Top" Width="26" RenderTransformOrigin="0.375,0.375" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_25954.png" MouseLeftButtonDown="BackButtonPressed" Opacity="0.5"/>
-        <Image HorizontalAlignment="Center" Height="35" Margin="104,11,60,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="0.375,0.375" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_5593.png" MouseLeftButtonDown="HomeButtonPressed" Opacity="0.5"/>
+        <Image HorizontalAlignment="Center" Height="26" Margin="0,16,0,0" VerticalAlignment="Top" Width="26" RenderTransformOrigin="0.375,0.375" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_25954.png" MouseLeftButtonDown="BackButtonPressed" Opacity="0.5"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="152"/>
         <Label Content="From: Your location" HorizontalAlignment="Left" Height="26" Margin="10,65,0,0" VerticalAlignment="Top" Width="180" Foreground="#FF494949" FontFamily="Segoe UI Semilight"/>
         <Label Content="To: " HorizontalAlignment="Left" Height="26" Margin="10,91,0,0" VerticalAlignment="Top" Width="26" Foreground="#FF494949" FontFamily="Segoe UI Semilight"/>
