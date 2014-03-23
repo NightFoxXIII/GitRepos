@@ -29,5 +29,7 @@
         </StackPanel>
         <Image Height="427" Margin="200,0" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="DownOnly" Stretch="UniformToFill"/>
         <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="147" Margin="0,280,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
+        <Rectangle HorizontalAlignment="Left" Height="427" Margin="200,0,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1"/>
+        <Rectangle HorizontalAlignment="Left" Height="427" Margin="632,0,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1"/>
     </Grid>
 </UserControl>
