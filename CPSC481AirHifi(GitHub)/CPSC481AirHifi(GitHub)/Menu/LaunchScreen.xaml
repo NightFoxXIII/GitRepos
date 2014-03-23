@@ -7,7 +7,7 @@
              d:DesignHeight="427" d:DesignWidth="832">
     <Grid Background="White">
         <StackPanel Height="Auto" x:Name="stackPanel1" Background="#9BFFFFFF" Margin="0,0,632,0">
-            <Image Height="128" x:Name="taxi_ads" Stretch="Uniform" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/taxi_1.jpg" ImageFailed="taxi_ads_ImageFailed" />
+            <Image Height="130" x:Name="taxi_ads" Stretch="Uniform" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/taxi_1.jpg" ImageFailed="taxi_ads_ImageFailed" />
             <Border BorderBrush="#FFF78080" BorderThickness="0" Height="70" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
             <Border BorderBrush="#FFFD9067" BorderThickness="0" Height="80" Loaded="GreyhoundBoxLoaded" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
             <Grid>
@@ -28,6 +28,6 @@
             </Canvas>
         </StackPanel>
         <Image Height="427" Margin="200,0" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="DownOnly" Stretch="UniformToFill"/>
-        <Rectangle Fill="#FFF5E013" HorizontalAlignment="Left" Height="149" Margin="0,278,0,0" Stroke="#FFF5E013" VerticalAlignment="Top" Width="10"/>
+        <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="149" Margin="0,278,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
     </Grid>
 </UserControl>
