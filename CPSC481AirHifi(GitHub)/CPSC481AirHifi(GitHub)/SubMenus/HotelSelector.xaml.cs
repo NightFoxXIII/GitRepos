@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace CPSC481AirHifi_GitHub_
 {
@@ -20,11 +21,35 @@ namespace CPSC481AirHifi_GitHub_
     public partial class HotelSelector : UserControl, ISwitchable
     {
         private Session session;
+        private int i = 0;
 
         public HotelSelector()
         {
             InitializeComponent();
+            DispatcherTimer dispatchertimer = new DispatcherTimer();
+
+            dispatchertimer.Tick += new EventHandler(dispatchertimer_Tick);
+            dispatchertimer.Interval = new TimeSpan(0, 0, 2);
+            dispatchertimer.Start();
         }
+
+        #region Image Timer Stuff
+
+        private void dispatchertimer_Tick(object sender, EventArgs e)
+        {
+            if (i >= 3)
+                i = 0;
+            i++;
+
+            taxi_ads.Source = (ImageSource)new BitmapImage(
+                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/taxi_" + (i % 100) + ".jpg", UriKind.RelativeOrAbsolute));
+        }
+
+        private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
+        }
+        #endregion
 
         #region Click Events
         public void HotelASelected(object sender, RoutedEventArgs e)

@@ -22,12 +22,12 @@
             <Label Content="Events" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="EventSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
             <Label Content="Directions" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="DirectionsSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
         </StackPanel>
-        <StackPanel Height="Auto" x:Name="stackPanel2" Width="200" Background="#9B17A7CB" HorizontalAlignment="Right">
+        <StackPanel Height="Auto" x:Name="stackPanel2" Width="200" Background="#9BFFFFFF" HorizontalAlignment="Right">
             <Canvas Height="140" x:Name="canvas_weat" Width="Auto">
                 <Image Canvas.Left="0" Canvas.Top="0" Height="140" x:Name="image_weather1" Stretch="Fill" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/Weather/weat_img1.png" />
             </Canvas>
         </StackPanel>
         <Image Height="427" Margin="200,0" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="DownOnly" Stretch="UniformToFill"/>
-        <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="149" Margin="0,278,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
+        <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="147" Margin="0,280,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
     </Grid>
 </UserControl>

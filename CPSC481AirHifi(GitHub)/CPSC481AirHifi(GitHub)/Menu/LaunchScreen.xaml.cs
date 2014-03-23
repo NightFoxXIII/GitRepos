@@ -23,7 +23,7 @@ namespace CPSC481AirHifi_GitHub_
         private Session session = new Session();
         private int i = 0;
 
-
+        #region Image Timer Stuff
         public LaunchScreen()
         {
             InitializeComponent();
@@ -34,6 +34,24 @@ namespace CPSC481AirHifi_GitHub_
             dispatchertimer.Start();
         }
 
+        private void dispatchertimer_Tick(object sender, EventArgs e)
+        {
+            if (i >= 3)
+                i = 0;
+            i++;
+            image_weather1.Source = (ImageSource)new BitmapImage(
+                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Weather/weat_img" + (i % 100) + ".png", UriKind.RelativeOrAbsolute));
+
+            taxi_ads.Source = (ImageSource)new BitmapImage(
+                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/taxi_" + (i % 100) + ".jpg", UriKind.RelativeOrAbsolute));
+        }
+
+        private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)
+        {
+
+        }
+        #endregion
+        
         #region Mouseover Events
         private void BorderCovered(object sender, MouseEventArgs e)
         {
@@ -59,23 +77,6 @@ namespace CPSC481AirHifi_GitHub_
             label.FontSize = 12;
         }
         #endregion
-
-        private void dispatchertimer_Tick(object sender, EventArgs e)
-        {
-            if (i >= 3)
-                i = 0;
-            i++;
-            image_weather1.Source = (ImageSource)new BitmapImage(
-                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Weather/weat_img" + (i % 100) + ".png", UriKind.RelativeOrAbsolute));
-
-            taxi_ads.Source = (ImageSource)new BitmapImage(
-                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/taxi_" + (i % 100) + ".jpg", UriKind.RelativeOrAbsolute));
-        }
-
-        private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)
-        {
-
-        }
 
         #region Loaders
         private void BusBoxLoaded(object sender, RoutedEventArgs e)

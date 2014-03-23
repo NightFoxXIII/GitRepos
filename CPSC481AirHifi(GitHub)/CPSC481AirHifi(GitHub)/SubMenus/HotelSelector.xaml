@@ -6,9 +6,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="427" d:DesignWidth="832">
     <Grid Background="White">
-        <Image Height="26" RenderTransformOrigin="0.57,-1.403" Margin="215,9,591,392" Width="26" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_25954.png" Opacity="0.5" MouseLeftButtonDown="BackButtonPress"/>
+        <Image Height="26" RenderTransformOrigin="0.57,-1.403" Margin="215,9,591,392" Width="26" Source="/CPSC481AirHifi(GitHub);component/Icon/Back.png" Opacity="0.5" MouseLeftButtonDown="BackButtonPress"/>
         <StackPanel Height="Auto" x:Name="stackPanel1" Background="#9BFFFFFF" Margin="0,0,632,0">
-            <Image Height="130" x:Name="taxi_ads" Stretch="Uniform" Width="200" />
+            <Image Height="130" x:Name="taxi_ads" Stretch="Uniform" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/taxi_1.jpg" ImageFailed="taxi_ads_ImageFailed" />
             <Border BorderBrush="#FFF78080" BorderThickness="0" Height="70" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
             <Border BorderBrush="#FFFD9067" BorderThickness="0" Height="80" Loaded="GreyhoundBoxLoaded" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
             <Grid>
@@ -23,24 +23,24 @@
             <Label Content="Directions" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="DirectionsSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
         </StackPanel>
         <Image Margin="545,213,0,0" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="DownOnly" Stretch="UniformToFill"/>
-        <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="133" Margin="0,294,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
+        <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="147" Margin="0,280,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
         <StackPanel HorizontalAlignment="Left" Height="213" Margin="200,0,0,0" VerticalAlignment="Top" Width="632">
             <Label Content="Hotels" Margin="55,0,0,0" FontFamily="Segoe UI Semilight" FontSize="18" Foreground="#FF494949"/>
             <Rectangle Height="1" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="493" HorizontalAlignment="Left" Margin="59,0,0,0"/>
-            <Border MouseLeftButtonDown="HotelASelected" BorderBrush="#FF7B94D8" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" Margin="10,10,0,0">
-                <Grid>
+            <Border MouseLeftButtonDown="HotelASelected" BorderBrush="#FF7B94D8" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" Margin="10,10,10,0">
+                <Grid Margin="0,0,10,0">
                     <Label Content="Route 2B" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
                     <Label Content="Estimated time of arrival: 11 minutes" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
                 </Grid>
             </Border>
-            <Border MouseLeftButtonDown="HotelBSelected" BorderBrush="#FF7B94D8" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" Margin="10,0,0,0">
-                <Grid>
+            <Border MouseLeftButtonDown="HotelBSelected" BorderBrush="#FF7B94D8" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" Margin="10,0">
+                <Grid Margin="0,0,10,0">
                     <Label Content="Route 2B" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
                     <Label Content="Estimated time of arrival: 11 minutes" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
                 </Grid>
             </Border>
-            <Border MouseLeftButtonDown="HotelCSelected" BorderBrush="#FF7B94D8" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" Margin="10,0,0,0">
-                <Grid>
+            <Border MouseLeftButtonDown="HotelCSelected" BorderBrush="#FF7B94D8" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" Margin="10,0">
+                <Grid Margin="0,0,10,0">
                     <Label Content="Route 2B" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
                     <Label Content="Estimated time of arrival: 11 minutes" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
                 </Grid>
