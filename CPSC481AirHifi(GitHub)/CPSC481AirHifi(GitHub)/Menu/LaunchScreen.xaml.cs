@@ -44,6 +44,9 @@ namespace CPSC481AirHifi_GitHub_
 
             taxi_ads.Source = (ImageSource)new BitmapImage(
                 new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/taxi_" + (i % 100) + ".jpg", UriKind.RelativeOrAbsolute));
+
+           image_events.Source = (ImageSource)new BitmapImage(
+                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Events/event" + (i % 100) + ".jpg", UriKind.RelativeOrAbsolute));
         }
 
         private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)

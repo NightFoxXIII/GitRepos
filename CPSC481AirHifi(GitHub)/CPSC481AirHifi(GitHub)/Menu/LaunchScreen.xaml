@@ -26,6 +26,8 @@
             <Canvas Height="140" x:Name="canvas_weat" Width="Auto">
                 <Image Canvas.Left="0" Canvas.Top="0" Height="140" x:Name="image_weather1" Stretch="Fill" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/Weather/weat_img1.png" />
             </Canvas>
+            <Label Content="Today's Events" Height="35" Name="label_events" FontSize="16" FontFamily="Segoe UI" Background="White" />
+            <Image Height="150" Name="image_events" Stretch="Fill" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/Events/event1.jpg" />
         </StackPanel>
         <Image Height="427" Margin="200,0" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="DownOnly" Stretch="UniformToFill"/>
         <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="147" Margin="0,280,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
