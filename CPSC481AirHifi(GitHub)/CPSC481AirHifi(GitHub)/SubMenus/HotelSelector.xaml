@@ -56,8 +56,8 @@
             <TextBox Height="139" TextWrapping="Wrap" Loaded="HotelDescription" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF7E7E7E" SelectionBrush="#FFB2B3B4" Margin="10,0,0,0" FontFamily="Segoe UI Semilight" IsManipulationEnabled="True" IsEnabled="False"/>
             <Border BorderThickness="1" Height="38">
                 <Grid HorizontalAlignment="Right">
-                    <Label Content="Select Hotel" Foreground="#FF7E7E7E" Margin="-285,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="FoodSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Left" Width="119" FontSize="13"/>
-                    <Label Content="Get Directions" Foreground="#FF7E7E7E" Margin="-69,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="FoodSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Right" Width="118" FontSize="13"/>
+                    <Label Content="Select Hotel" Foreground="#FF7E7E7E" Margin="-285,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="SelectHotel" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Left" Width="119" FontSize="13"/>
+                    <Label Content="Get Directions" Foreground="#FF7E7E7E" Margin="-69,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="DirectionsSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Right" Width="118" FontSize="13"/>
                 </Grid>
             </Border>
         </StackPanel>

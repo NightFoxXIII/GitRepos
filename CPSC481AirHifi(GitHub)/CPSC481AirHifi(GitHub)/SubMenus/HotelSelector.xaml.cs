@@ -73,16 +73,15 @@ namespace CPSC481AirHifi_GitHub_
             hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
             description = "I am the bannana hotel";
             hoteldecription.Text = description;
-            hotelname.Content = "Hotel Purple";
-            hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
-            hoteldecription.Text = "I am the big blue totel";
         }
 
         public void HotelCSelected(object sender, RoutedEventArgs e)
         {
-            hotelname.Content = "The Blue Hotel";
+            name = "The Blue Hotel";
+            hotelname.Content = name;
             hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
-            hoteldecription.Text = "We are the small purple hotel monster";
+            description = "We are the small purple hotel monster";
+            hoteldecription.Text = description;
         }
         #endregion
 
@@ -191,14 +190,8 @@ namespace CPSC481AirHifi_GitHub_
 
         private void BusSelectionChanged(object sender, RoutedEventArgs e)
         {
-            session.setpreviousscreen("launchscreen");
+            session.setpreviousscreen("hotelscreen");
             Switcher.Switch(new BusSelector(), session);
-        }
-
-        private void HotelSearch(object sender, RoutedEventArgs e)
-        {
-            session.setpreviousscreen("launchscreen");
-            Switcher.Switch(new HotelSelector(), session);
         }
 
         private void FoodSearch(object sender, RoutedEventArgs e)
@@ -211,10 +204,21 @@ namespace CPSC481AirHifi_GitHub_
             return;
         }
 
+        private void SelectHotel(object sender, RoutedEventArgs e)
+        {
+            session.sethotel(name);
+            session.sethoteldescription(description);
+            session.setpreviousscreen("hotelscreen");
+            Switcher.Switch(new LaunchScreen(), session);
+        }
+
         private void DirectionsSearch(object sender, RoutedEventArgs e)
         {
-            session.setpreviousscreen("launchscreen");
-            Switcher.Switch(new RouteSearchSplashScreen(), session);
+            session.setdestination(name);
+            session.sethotel(name);
+            session.sethoteldescription(description);
+            session.setpreviousscreen("hotelscreen");
+            Switcher.Switch(new RouteSearch(), session);
         }
         #endregion
 
