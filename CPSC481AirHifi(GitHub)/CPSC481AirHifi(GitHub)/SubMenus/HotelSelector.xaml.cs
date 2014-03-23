@@ -68,16 +68,16 @@ namespace CPSC481AirHifi_GitHub_
 
         public void HotelBSelected(object sender, RoutedEventArgs e)
         {
-            name = "Hotel Arts";
+            name = "Hotel Blue";
             hotelname.Content = name;
             hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
-            description = "I am the bannana hotel";
+            description = "I am the blue hotel";
             hoteldecription.Text = description;
         }
 
         public void HotelCSelected(object sender, RoutedEventArgs e)
         {
-            name = "The Blue Hotel";
+            name = "The Purple Hotel";
             hotelname.Content = name;
             hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
             description = "We are the small purple hotel monster";
@@ -149,7 +149,8 @@ namespace CPSC481AirHifi_GitHub_
             }
             else
             {
-                label.Content = session.gethotel();
+                name = session.gethotel();
+                label.Content = name;
             }
         }
 
@@ -169,15 +170,16 @@ namespace CPSC481AirHifi_GitHub_
 
         private void HotelDescription(object sender, RoutedEventArgs e)
         {
-            var description = sender as TextBox;
-            hoteldecription = description;
+            var box = sender as TextBox;
+            hoteldecription = box;
             if (session.gethoteldescription() == null)
             {
                 return;
             }
             else
             {
-                description.Text = session.gethoteldescription();
+                description = session.gethoteldescription();
+                box.Text = description;
             }
         }
         #endregion
@@ -213,6 +215,11 @@ namespace CPSC481AirHifi_GitHub_
         }
 
         private void DirectionsSearch(object sender, RoutedEventArgs e)
+        {
+            session.setpreviousscreen("hotelscreen");
+            Switcher.Switch(new RouteSearchSplashScreen(), session);
+        }
+        private void HotelDirectionsSearch(object sender, RoutedEventArgs e)
         {
             session.setdestination(name);
             session.sethotel(name);

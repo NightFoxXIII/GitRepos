@@ -38,13 +38,13 @@ namespace CPSC481AirHifi_GitHub_
             var label = sender as Label;
             switch (session.getdestination())
             {
-                case "ShortRoute":
+                case "Hotel Arts":
                     label.Content = "Estimated time of arrival: 2 minutes";
                     break;
-                case "MediumRoute":
+                case "Hotel Blue":
                     label.Content = "Estimated time of arrival: 5 minutes";
                     break;
-                case "LongRoute":
+                case "The Purple Hotel":
                     label.Content = "Estimated time of arrival: 16 minutes";
                     break;
             }
@@ -55,13 +55,13 @@ namespace CPSC481AirHifi_GitHub_
             var label = sender as Label;
             switch (session.getdestination())
             {
-                case "ShortRoute":
+                case "Hotel Arts":
                     label.Content = "Estimated time of arrival: 3 minutes";
                     break;
-                case "MediumRoute":
+                case "Hotel Blue":
                     label.Content = "Estimated time of arrival: 11 minutes";
                     break;
-                case "LongRoute":
+                case "The Purple Hotel":
                     label.Content = "Estimated time of arrival: 22 minutes";
                     break;
             }
@@ -72,13 +72,13 @@ namespace CPSC481AirHifi_GitHub_
             var label = sender as Label;
             switch (session.getdestination())
             {
-                case "ShortRoute":
+                case "Hotel Arts":
                     label.Content = "Estimated time of arrival: 2 minutes";
                     break;
-                case "MediumRoute":
+                case "Hotel Blue":
                     label.Content = "Estimated time of arrival: 32 minutes";
                     break;
-                case "LongRoute":
+                case "The Purple Hotel":
                     label.Content = "Estimated time of arrival: 1 h 23 m";
                     break;
             }
@@ -88,7 +88,14 @@ namespace CPSC481AirHifi_GitHub_
         #region Window Transitions
         private void BackButtonPressed(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new RouteSearchSplashScreen(), session);
+            if (session.getpreviousscreen() == "hotelscreen")
+            {
+                Switcher.Switch(new HotelSelector(), session);
+            }
+            else
+            {
+                Switcher.Switch(new RouteSearchSplashScreen(), session);
+            }
         }
 
         private void HomeButtonPressed(object sender, RoutedEventArgs e)

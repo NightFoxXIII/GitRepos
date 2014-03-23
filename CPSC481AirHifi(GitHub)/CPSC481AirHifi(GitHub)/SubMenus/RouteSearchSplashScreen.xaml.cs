@@ -20,7 +20,7 @@ namespace CPSC481AirHifi_GitHub_
     public partial class RouteSearchSplashScreen : UserControl, ISwitchable
     {
         private Session session;
-        List<string> comboboxlist = new List<string>(new String[] { "ShortRoute", "MediumRoute", "LongRoute" });
+        List<string> comboboxlist = new List<string>(new String[] { "Hotel Arts", "Hotel Blue", "The Purple Hotel" });
 
         public RouteSearchSplashScreen()
         {

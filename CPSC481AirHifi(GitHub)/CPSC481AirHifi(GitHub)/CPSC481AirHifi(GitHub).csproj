@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Back.cs" />
     <Compile Include="MainScreenPanelUIs\Greayhound Route Panel UI\DefaultGreyhoundRoute.xaml.cs">
       <DependentUpon>DefaultGreyhoundRoute.xaml</DependentUpon>
     </Compile>
