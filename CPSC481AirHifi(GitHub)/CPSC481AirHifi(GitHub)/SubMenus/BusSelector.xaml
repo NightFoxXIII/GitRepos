@@ -13,7 +13,7 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="152"/>
         <Label Content="Bus Routes" HorizontalAlignment="Center" Height="34" Margin="0,65,-0.2,0" VerticalAlignment="Top" Width="89" Foreground="#FF494949" FontFamily="Segoe UI Semilight" FontSize="16"/>
         <Image HorizontalAlignment="Left" Height="427" VerticalAlignment="Top" Width="632" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="Both" Stretch="Fill" Grid.Column="1"/>
-        <Border Margin="0,104,0,253" MouseLeftButtonDown="Route1ASelected" BorderBrush="#FFF78080" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
+        <Border Margin="0,104,0,253" Height="70" MouseLeftButtonDown="Route1ASelected" BorderBrush="#FFF78080" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
             <Grid>
                 <Label Content="Route 1A" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
                 <Label Content="Estimated time of arrival: 17 minutes" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
@@ -21,7 +21,7 @@
                 <Rectangle Fill="#FFEC4848" HorizontalAlignment="Left" Height="70" Stroke="#FFEC4848" VerticalAlignment="Top" Width="10"/>
             </Grid>
         </Border>
-        <Border Margin="0,173,0,183" MouseLeftButtonDown="Route1BSelected" BorderBrush="#FFFDF0B4" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
+        <Border Margin="0,173,0,183" Height="70" MouseLeftButtonDown="Route1BSelected" BorderBrush="#FFFDF0B4" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
             <Grid>
                 <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="70" Margin="0,1,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
                 <Label Content="Route 1B" HorizontalAlignment="Left" Margin="10,1,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
@@ -29,7 +29,7 @@
                 <Label Content="Select Route&#xA;&#xA;" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top" Width="166" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Height="28"/>
             </Grid>
         </Border>
-        <Border Margin="0,244,0,113" MouseLeftButtonDown="Route2ASelected" BorderBrush="#FFCFF3B1" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
+        <Border Margin="0,244,0,113" Height="70" MouseLeftButtonDown="Route2ASelected" BorderBrush="#FFCFF3B1" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
             <Grid>
                 <Rectangle Fill="#FF73E452" HorizontalAlignment="Left" Height="70" Stroke="#FF73E452" VerticalAlignment="Top" Width="10"/>
                 <Label Content="Route 2A" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
@@ -37,7 +37,7 @@
                 <Label Content="Select Route&#xA;&#xA;&#xA;" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Height="28"/>
             </Grid>
         </Border>
-        <Border Margin="0,314,0,43" MouseLeftButtonDown="Route2BSelected" BorderBrush="#FF7B94D8" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
+        <Border Margin="0,314,0,43" Height="70" MouseLeftButtonDown="Route2BSelected" BorderBrush="#FF7B94D8" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
             <Grid>
                 <Rectangle Fill="#FF366DE2" HorizontalAlignment="Left" Height="70" Stroke="#FF366DE2" VerticalAlignment="Top" Width="10"/>
                 <Label Content="Route 2B" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>

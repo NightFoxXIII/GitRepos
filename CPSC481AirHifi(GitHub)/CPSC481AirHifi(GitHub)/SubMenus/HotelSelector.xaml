@@ -29,24 +29,38 @@
             <Rectangle Height="1" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="493" HorizontalAlignment="Left" Margin="59,0,0,0"/>
             <Border MouseLeftButtonDown="HotelASelected" BorderBrush="#FF7B94D8" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" Margin="10,10,10,0">
                 <Grid Margin="0,0,10,0">
-                    <Label Content="Route 2B" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
-                    <Label Content="Estimated time of arrival: 11 minutes" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
+                    <Label Content="Hotel Arts" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
+                    <Label Content="Phone: (403)-342-3454&#x9;&#x9;Address: 17 Close Street" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="592" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
                 </Grid>
             </Border>
             <Border MouseLeftButtonDown="HotelBSelected" BorderBrush="#FF7B94D8" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" Margin="10,0">
                 <Grid Margin="0,0,10,0">
-                    <Label Content="Route 2B" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
-                    <Label Content="Estimated time of arrival: 11 minutes" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="39*"/>
+                        <ColumnDefinition Width="262*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Hotel Purlple" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949" Grid.ColumnSpan="2"/>
+                    <Label Content="Phone: (403)-373-4576&#x9;&#x9;Address: 93 Somewhat Far Street" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="592" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Grid.ColumnSpan="2"/>
                 </Grid>
             </Border>
             <Border MouseLeftButtonDown="HotelCSelected" BorderBrush="#FF7B94D8" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" Margin="10,0">
                 <Grid Margin="0,0,10,0">
-                    <Label Content="Route 2B" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
-                    <Label Content="Estimated time of arrival: 11 minutes" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
+                    <Label Content="The Blue Hotel" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
+                    <Label Content="Phone: (403)-342-3454&#x9;&#x9;Address: 54 Really Far Street" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="592" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
                 </Grid>
             </Border>
         </StackPanel>
-        <Border BorderThickness="1" HorizontalAlignment="Left" Height="214" Margin="200,213,0,0" VerticalAlignment="Top" Width="345"/>
+        <StackPanel HorizontalAlignment="Left" Height="213" Margin="200,213,0,0" VerticalAlignment="Top" Width="345" Loaded="HotelDescriptionPanel" Visibility="Hidden">
+            <Label Loaded="HotelName" FontFamily="Segoe UI Light" FontSize="18" Foreground="#FF494949" Margin="10,0,0,0" Height="30"/>
+            <Rectangle Height="1" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="325" HorizontalAlignment="Left" Margin="10,5,0,5"/>
+            <TextBox Height="139" TextWrapping="Wrap" Loaded="HotelDescription" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF7E7E7E" SelectionBrush="#FFB2B3B4" Margin="10,0,0,0" FontFamily="Segoe UI Semilight" IsManipulationEnabled="True" IsEnabled="False"/>
+            <Border BorderThickness="1" Height="38">
+                <Grid HorizontalAlignment="Right">
+                    <Label Content="Select Hotel" Foreground="#FF7E7E7E" Margin="-285,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="FoodSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Left" Width="119" FontSize="13"/>
+                    <Label Content="Get Directions" Foreground="#FF7E7E7E" Margin="-69,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="FoodSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Right" Width="118" FontSize="13"/>
+                </Grid>
+            </Border>
+        </StackPanel>
         <Rectangle HorizontalAlignment="Left" Height="427" Margin="200,0,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1"/>
         <Rectangle HorizontalAlignment="Left" Height="1" Margin="200,213,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="632"/>
     </Grid>

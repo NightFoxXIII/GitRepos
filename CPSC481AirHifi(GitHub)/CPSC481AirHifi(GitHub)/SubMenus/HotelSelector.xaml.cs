@@ -21,6 +21,11 @@ namespace CPSC481AirHifi_GitHub_
     public partial class HotelSelector : UserControl, ISwitchable
     {
         private Session session;
+        private Label hotelname;
+        private StackPanel hoteldescriptionpanel;
+        private TextBox hoteldecription;
+        private string name;
+        private string description;
         private int i = 0;
 
         public HotelSelector()
@@ -54,17 +59,30 @@ namespace CPSC481AirHifi_GitHub_
         #region Click Events
         public void HotelASelected(object sender, RoutedEventArgs e)
         {
-            //some actions
+            name = "Hotel Arts";
+            hotelname.Content = name;
+            hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
+            description = "I am the bannana hotel";
+            hoteldecription.Text = description;
         }
 
         public void HotelBSelected(object sender, RoutedEventArgs e)
         {
-            //some actions
+            name = "Hotel Arts";
+            hotelname.Content = name;
+            hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
+            description = "I am the bannana hotel";
+            hoteldecription.Text = description;
+            hotelname.Content = "Hotel Purple";
+            hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
+            hoteldecription.Text = "I am the big blue totel";
         }
 
         public void HotelCSelected(object sender, RoutedEventArgs e)
         {
-            //some actions
+            hotelname.Content = "The Blue Hotel";
+            hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
+            hoteldecription.Text = "We are the small purple hotel monster";
         }
         #endregion
 
@@ -120,6 +138,48 @@ namespace CPSC481AirHifi_GitHub_
         {
             var content = sender as Border;
             content.Child = new DefaultGreyhoundRoute();
+        }
+
+        private void HotelName(object sender, RoutedEventArgs e)
+        {
+            var label = sender as Label;
+            hotelname = label;
+            if (session.gethotel() == null)
+            {
+                return;
+            }
+            else
+            {
+                label.Content = session.gethotel();
+            }
+        }
+
+        private void HotelDescriptionPanel(object sender, RoutedEventArgs e)
+        {
+            var panel = sender as StackPanel;
+            hoteldescriptionpanel = panel;
+            if (session.gethotel() == null)
+            {
+                hoteldescriptionpanel.Visibility = System.Windows.Visibility.Hidden;
+            }
+            else
+            {
+                hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
+            }
+        }
+
+        private void HotelDescription(object sender, RoutedEventArgs e)
+        {
+            var description = sender as TextBox;
+            hoteldecription = description;
+            if (session.gethoteldescription() == null)
+            {
+                return;
+            }
+            else
+            {
+                description.Text = session.gethoteldescription();
+            }
         }
         #endregion
 
