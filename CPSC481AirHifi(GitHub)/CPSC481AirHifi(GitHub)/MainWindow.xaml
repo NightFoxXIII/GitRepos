@@ -1,5 +1,5 @@
 ﻿<Window x:Class="CPSC481AirHifi_GitHub_.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="466" Width="848" ResizeMode="NoResize">
+        Title="Information Kiosk" Height="466" Width="848" ResizeMode="NoResize" Icon="/CPSC481AirHifi%28GitHub%29;component/Icon/icon_19308.png">
 </Window>
