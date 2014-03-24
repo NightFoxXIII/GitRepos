@@ -28,6 +28,15 @@
             </Canvas>
             <Label Content="Today's Events" Height="35" Name="label_events" FontSize="16" FontFamily="Segoe UI Semilight" Background="{x:Null}" Foreground="#FF494949" Margin="10,0,0,0" />
             <Image Height="150" Name="image_events" Stretch="Fill" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/Events/event1.jpg" />
+            <Grid Height="100" Name="grid_info_section" Width="200">
+                <Border BorderThickness="1" Height="60" HorizontalAlignment="Left" Margin="120,19,0,0" Name="border_language" VerticalAlignment="Top" Width="60">
+                    <Image Height="Auto" Name="image_language" Stretch="Fill" Width="Auto" Source="/CPSC481AirHifi%28GitHub%29;component/Icon/icon_5735.png" />
+                </Border>
+                <Grid Height="60" HorizontalAlignment="Left" Margin="24,19,0,0" Name="grid_info" VerticalAlignment="Top" Width="60"></Grid>
+                <Border BorderThickness="1" Height="Auto" HorizontalAlignment="Left" Margin="23,20,0,0" Name="border_info" VerticalAlignment="Top" Width="Auto">
+                    <Image Height="58" Name="image_info" Stretch="Fill" Width="59" Source="/CPSC481AirHifi%28GitHub%29;component/Icon/icon_18737.png" />
+                </Border>
+            </Grid>
         </StackPanel>
         <Image Height="427" Margin="200,0" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="DownOnly" Stretch="UniformToFill"/>
         <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="147" Margin="0,280,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>

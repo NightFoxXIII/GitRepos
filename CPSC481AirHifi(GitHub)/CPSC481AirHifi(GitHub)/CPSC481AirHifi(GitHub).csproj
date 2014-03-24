@@ -226,6 +226,15 @@
     <Resource Include="Images\Events\event2.jpg" />
     <Resource Include="Images\Events\event3.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\icon_5735.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\icon_18737.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\icon_19308.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
