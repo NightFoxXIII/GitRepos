@@ -22,6 +22,7 @@ namespace CPSC481AirHifi_GitHub_
     {
         private Session session;
         private TextBox hotelreviewsbox;
+        private TextBox hotelreviewtextbox;
         private int i = 0;
 
         public HotelReview()
@@ -130,15 +131,10 @@ namespace CPSC481AirHifi_GitHub_
         {
             var box = sender as TextBox;
             hotelreviewsbox = box;
-            if (session.gethoteldescription() == null)
-            {
-                return;
-            }
-            else
-            {
-                box.Text = session.gethoteldescription();
-            }
+            box.Text = session.getHotelReviews();
         }
+
+
         #endregion
 
         #region Window Transitions

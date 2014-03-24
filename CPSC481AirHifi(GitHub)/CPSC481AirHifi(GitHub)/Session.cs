@@ -7,6 +7,7 @@ namespace CPSC481AirHifi_GitHub_
 {
     public class Session
     {
+        private Data data = new Data();
         private string previousscreen;
         private string previouspreviousscreen;
         private string busroute = "Route1A";
@@ -64,6 +65,38 @@ namespace CPSC481AirHifi_GitHub_
             string tempscreen = previousscreen;
             previousscreen = previouspreviousscreen;
             return tempscreen;
+        }
+
+        public string getHotelReviews()
+        {
+            switch (hotel)
+            {
+                case "Hotel Arts":
+                    return data.getHotelArtsReviews();
+                case "Hotel Blue":
+                    return data.getHotelBlueReviews();
+                case "The Purple Hotel":
+                    return data.getThePurpleHotelReviews();
+            }
+            return "";
+
+        }
+
+        public void addHotelReview(string review)
+        {
+            switch (hotel)
+            {
+                case "Hotel Arts":
+                    data.addReviewHotelArts(review);
+                    break;
+                case "Hotel Blue":
+                    data.addReviewHotelBlue(review);
+                    break;
+                case "The Purple Hotel":
+                    data.addReviewThePurpleHotel(review);
+                    break;
+            }
+
         }
     }
 }
