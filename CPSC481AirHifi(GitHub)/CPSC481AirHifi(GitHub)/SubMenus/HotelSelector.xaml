@@ -8,8 +8,7 @@
     <Grid Background="White">
         <Image Height="26" RenderTransformOrigin="0.57,-1.403" Margin="215,9,591,392" Width="26" Source="/CPSC481AirHifi(GitHub);component/Icon/Back.png" Opacity="0.5" MouseLeftButtonDown="BackButtonPress"/>
         <StackPanel Height="Auto" x:Name="stackPanel1" Background="#9BFFFFFF" Margin="0,0,632,0">
-            <Image Height="130" x:Name="taxi_ads" Stretch="Uniform" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/taxi_1.jpg" ImageFailed="taxi_ads_ImageFailed" />
-            <Border BorderBrush="#FFF78080" BorderThickness="0" Height="70" Width="200" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
+            <Border BorderThickness="0" Height="130" x:Name="TaxiAdvert"/>            <Border BorderBrush="#FFF78080" BorderThickness="0" Height="70" Width="200" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
             <Border BorderBrush="#FFFD9067" BorderThickness="0" Height="80" Width="200" Loaded="GreyhoundBoxLoaded" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
             <Grid>
                 <Border Margin="12,0,23,0" >

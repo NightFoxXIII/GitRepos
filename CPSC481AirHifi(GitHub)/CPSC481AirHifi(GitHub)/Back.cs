@@ -25,8 +25,8 @@ namespace CPSC481AirHifi_GitHub_
                 case "busselectionscreen":
                     Switcher.Switch(new BusSelector(), session);
                     break;
-                case "a":
-                    Switcher.Switch(new LaunchScreen(), session);
+                case "RouteSearch":
+                    Switcher.Switch(new RouteSearch(), session);
                     break;
             }
         }

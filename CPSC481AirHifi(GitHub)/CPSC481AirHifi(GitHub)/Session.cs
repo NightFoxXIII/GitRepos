@@ -8,8 +8,7 @@ namespace CPSC481AirHifi_GitHub_
     public class Session
     {
         private Data data = new Data();
-        private string previousscreen;
-        private string previouspreviousscreen;
+        private Stack<string> screenhistory = new Stack<string>();
         private string busroute = "Route1A";
         private string hotel;
         private string hoteldescription;
@@ -56,15 +55,12 @@ namespace CPSC481AirHifi_GitHub_
 
         public void setpreviousscreen(string currentscreen)
         {
-            previouspreviousscreen = previousscreen;
-            previousscreen = currentscreen;
+            screenhistory.Push(currentscreen);
         }
 
         public string getpreviousscreen()
         {
-            string tempscreen = previousscreen;
-            previousscreen = previouspreviousscreen;
-            return tempscreen;
+            return screenhistory.Pop();
         }
 
         public string getHotelReviews()

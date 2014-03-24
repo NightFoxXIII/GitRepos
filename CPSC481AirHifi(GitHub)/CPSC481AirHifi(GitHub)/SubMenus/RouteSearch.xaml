@@ -15,20 +15,33 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="152"/>
         <Label Content="From: Your location" HorizontalAlignment="Left" Height="26" Margin="10,65,0,0" VerticalAlignment="Top" Width="180" Foreground="#FF494949" FontFamily="Segoe UI Semilight"/>
         <Label HorizontalAlignment="Left" Height="26" Margin="10,91,0,0" VerticalAlignment="Top" Width="180" Foreground="#FF494949" FontFamily="Segoe UI Semilight" Loaded="Destination"/>
-        <Rectangle Fill="#FFEC4848" HorizontalAlignment="Left" Height="70" Margin="0,122,0,0" Stroke="#FFEC4848" VerticalAlignment="Top" Width="10"/>
-        <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="70" Margin="0,192,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
-        <Rectangle Fill="#FF73E452" HorizontalAlignment="Left" Height="70" Margin="0,262,0,0" Stroke="#FF73E452" VerticalAlignment="Top" Width="10"/>
+        <Border Margin="0,122,0,235" MouseLeftButtonDown="PedestrianDirections" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" BorderBrush="#FFEC6060">
+            <Grid>
+                <Rectangle Fill="#FFEC4848" HorizontalAlignment="Left" Height="70" Stroke="#FFEC4848" VerticalAlignment="Top" Width="10"/>
+                <Label Content="By Vehicle" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
+                <Label HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Loaded="TaxiTime"/>
+                <Label Content="Contact a taxi service&#xA;" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Height="28"/>
+            </Grid>
+        </Border>
+        <Border Margin="0,192,0,165" MouseLeftButtonDown="PedestrianDirections" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" BorderBrush="#FFF3EE72">
+            <Grid>
+                <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="70" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
+                <Label Content="By Public Transit" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
+                <Label HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Loaded="TransitTime"/>
+                <Label Content="Show transit schedual&#xA;" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="166" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Height="28"/>
+            </Grid>
+        </Border>
+        <Border Margin="0,262,0,95" BorderBrush="#FF9BF381" MouseLeftButtonDown="PedestrianDirections" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
+            <Grid>
+                <Rectangle Fill="#FF73E452" HorizontalAlignment="Left" Height="70" Stroke="#FF73E452" VerticalAlignment="Top" Width="10"/>
+                <Label Content="By Foot" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
+                <Label HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="190" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Loaded="FootTime"/>
+                <Label Content="Show route&#xA;" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Height="28"/>
+            </Grid>
+        </Border>
         <Image Grid.Column="1" HorizontalAlignment="Left" Height="427" VerticalAlignment="Top" Width="632" Loaded="MapLoader" StretchDirection="Both" Stretch="Fill"/>
-        <Label Content="By Vehicle" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
-        <Label HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top" Width="200" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Loaded="TaxiTime"/>
-        <Label Content="Contact a taxi service&#xD;&#xA;" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
-        <Label Content="By Public Transit" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
-        <Label HorizontalAlignment="Left" Margin="10,215,0,0" VerticalAlignment="Top" Width="200" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Loaded="TransitTime"/>
-        <Label Content="Show transit schedual&#xA;" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="166" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
-        <Label Content="By Foot" HorizontalAlignment="Left" Margin="10,261,0,0" VerticalAlignment="Top" Height="32" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
-        <Label HorizontalAlignment="Left" Margin="10,285,0,0" VerticalAlignment="Top" Width="200" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Loaded="FootTime"/>
-        <Label Content="Show route&#xA;" HorizontalAlignment="Left" Margin="10,304,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
         <Rectangle HorizontalAlignment="Left" Height="427" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="70,349,0,0" VerticalAlignment="Top" Width="60" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_1926.png"/>
 
     </Grid>
 </UserControl>

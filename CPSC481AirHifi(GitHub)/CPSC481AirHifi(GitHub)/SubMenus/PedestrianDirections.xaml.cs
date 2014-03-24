@@ -15,13 +15,13 @@ using System.Windows.Shapes;
 namespace CPSC481AirHifi_GitHub_
 {
     /// <summary>
-    /// Interaction logic for RouteSearch.xaml
+    /// Interaction logic for PedestrianDirections.xaml
     /// </summary>
-    public partial class RouteSearch : UserControl, ISwitchable
+    public partial class PedestrianDirections : UserControl, ISwitchable
     {
         private Session session;
 
-        public RouteSearch()
+        public PedestrianDirections()
         {
             InitializeComponent();
         }
@@ -31,6 +31,29 @@ namespace CPSC481AirHifi_GitHub_
         {
             var label = sender as Label;
             label.Content = "To: " + session.getdestination();
+        }
+
+        public void TitleLoader(object sender, RoutedEventArgs e)
+        {
+            var label = sender as Label;
+            label.Content = "Directions to " + session.getdestination() + " on Foot";
+        }
+
+        public void DirectionsLoader(object sender, RoutedEventArgs e)
+        {
+            var label = sender as Label;
+            switch (session.getdestination())
+            {
+                case "Hotel Arts":
+                    label.Content = "Cross 16 Avenue and follow the pedestrian path \r\n \r\nTake a right on 17 Avenue and follow down to the intersection \r\n \r\nCross both 17 Avenue and 13 Street NW at the intersection \r\n \r\nFollow 17 Avenue \r\n \r\nYou are at your destination";
+                    break;
+                case "Hotel Blue":
+                    label.Content = "Estimated time of arrival: 5 minutes";
+                    break;
+                case "The Purple Hotel":
+                    label.Content = "Estimated time of arrival: 16 minutes";
+                    break;
+            }
         }
 
         public void TaxiTime(object sender, RoutedEventArgs e)
@@ -46,23 +69,6 @@ namespace CPSC481AirHifi_GitHub_
                     break;
                 case "The Purple Hotel":
                     label.Content = "Estimated time of arrival: 16 minutes";
-                    break;
-            }
-        }
-
-        public void MapLoader(object sender, RoutedEventArgs e)
-        {
-            var image = sender as Image;
-            switch (session.getdestination())
-            {
-                case "Hotel Arts":
-                    image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/short route.png", UriKind.RelativeOrAbsolute));
-                    break;
-                case "Hotel Blue":
-                    image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/medium route.png", UriKind.RelativeOrAbsolute));
-                    break;
-                case "The Purple Hotel":
-                    image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/long route.png", UriKind.RelativeOrAbsolute));
                     break;
             }
         }
@@ -102,31 +108,11 @@ namespace CPSC481AirHifi_GitHub_
         }
         #endregion
 
-        #region Mouseover Events
-        private void BorderCovered(object sender, MouseEventArgs e)
-        {
-            var border = sender as Border;
-            border.BorderThickness = new Thickness(1);
-        }
-
-        private void BorderUncovered(object sender, MouseEventArgs e)
-        {
-            var border = sender as Border;
-            border.BorderThickness = new Thickness(0);
-        }
-        #endregion
-
         #region Window Transitions
         private void BackButtonPressed(object sender, RoutedEventArgs e)
         {
             var back = new Back();
             back.StepBack(session);
-        }
-
-        private void PedestrianDirections(object sender, RoutedEventArgs e)
-        {
-            session.setpreviousscreen("RouteSearch");
-            Switcher.Switch(new PedestrianDirections(), session);
         }
 
         private void HomeButtonPressed(object sender, RoutedEventArgs e)

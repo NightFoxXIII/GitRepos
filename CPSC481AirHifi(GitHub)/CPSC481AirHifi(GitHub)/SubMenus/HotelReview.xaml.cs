@@ -24,10 +24,12 @@ namespace CPSC481AirHifi_GitHub_
         private TextBox hotelreviewsbox;
         private TextBox hotelreviewtextbox;
         private int i = 0;
+        private int c = 2;
 
         public HotelReview()
         {
             InitializeComponent();
+            TaxiAdvert.Child = new CabAdvert1();
             DispatcherTimer dispatchertimer = new DispatcherTimer();
 
             dispatchertimer.Tick += new EventHandler(dispatchertimer_Tick);
@@ -40,16 +42,27 @@ namespace CPSC481AirHifi_GitHub_
         private void dispatchertimer_Tick(object sender, EventArgs e)
         {
             if (i >= 3)
+            {
                 i = 0;
+                c++;
+                if (c >= 4)
+                    c = 1;
+            }
+
             i++;
 
-            taxi_ads.Source = (ImageSource)new BitmapImage(
-                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/taxi_" + (i % 100) + ".jpg", UriKind.RelativeOrAbsolute));
-        }
-
-        private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)
-        {
-
+            switch (c)
+            {
+                case 1:
+                    TaxiAdvert.Child = new CabAdvert1();
+                    break;
+                case 2:
+                    TaxiAdvert.Child = new CabAdvert2();
+                    break;
+                case 3:
+                    TaxiAdvert.Child = new CabAdvert3();
+                    break;
+            }
         }
         #endregion
 

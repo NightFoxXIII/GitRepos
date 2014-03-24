@@ -68,6 +68,9 @@
       <DependentUpon>CabAdvert1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data.cs" />
+    <Compile Include="SubMenus\PedestrianDirections.xaml.cs">
+      <DependentUpon>PedestrianDirections.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SubMenus\HotelReview.xaml.cs">
       <DependentUpon>HotelReview.xaml</DependentUpon>
     </Compile>
@@ -119,6 +122,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainScreenPanelUIs\Cab Adverts\CabAdvert1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SubMenus\PedestrianDirections.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -266,7 +273,7 @@
     <Resource Include="Images\Maps\current location.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\QRcodeINDIA.gif" />
+    <Resource Include="Icon\icon_1926.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
