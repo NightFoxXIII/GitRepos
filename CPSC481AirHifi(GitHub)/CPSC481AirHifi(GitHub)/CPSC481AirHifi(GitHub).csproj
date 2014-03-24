@@ -58,6 +58,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Back.cs" />
+    <Compile Include="Data.cs" />
     <Compile Include="SubMenus\HotelReview.xaml.cs">
       <DependentUpon>HotelReview.xaml</DependentUpon>
     </Compile>
