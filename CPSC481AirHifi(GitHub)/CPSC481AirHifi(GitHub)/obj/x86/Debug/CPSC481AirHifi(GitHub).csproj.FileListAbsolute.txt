@@ -42,7 +42,6 @@ C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(Git
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\RouteSearchSplashScreen.g.cs
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\HotelReview.baml
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\SubMenus\HotelReview.g.cs
-C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\CPSC481AirHifi(GitHub).csprojResolveAssemblyReference.cache
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Cab Adverts\CabAdvert3.baml
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Cab Adverts\CabAdvert2.baml
 C:\Users\Neonium\Source\Repos\GitRepos\CPSC481AirHifi(GitHub)\CPSC481AirHifi(GitHub)\obj\x86\Debug\MainScreenPanelUIs\Cab Adverts\CabAdvert1.baml

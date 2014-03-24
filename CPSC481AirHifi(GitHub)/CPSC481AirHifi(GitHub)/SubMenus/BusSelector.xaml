@@ -47,5 +47,6 @@
         </Border>
         <Image HorizontalAlignment="Left" Height="30" Margin="85,15,0,0" VerticalAlignment="Top" Width="30" Source="/CPSC481AirHifi(GitHub);component/Icon/Back.png" MouseLeftButtonDown="BackButtonPress" Opacity="0.5"/>
         <Rectangle HorizontalAlignment="Left" Height="427" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="85,390,0,0" VerticalAlignment="Top" Width="30" Source="/CPSC481AirHifi(GitHub);component/Images/QRcodeINDIA.gif"/>
     </Grid>
 </UserControl>

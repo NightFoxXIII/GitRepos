@@ -204,18 +204,6 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Simple Large Map.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\taxi_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\taxi_2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\taxi_3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="MainScreenPanelUIs\Search Panel UI\" />
   </ItemGroup>
   <ItemGroup>
@@ -276,6 +264,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Maps\current location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\QRcodeINDIA.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,7 +6,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="130" d:DesignWidth="200">
     <Grid Background="White">
-        <Rectangle Fill="#FF6935B4" HorizontalAlignment="Left" Height="130" Stroke="#FF6935B4" VerticalAlignment="Top" Width="10"/>
+        <Rectangle Fill="#FF8F69C5" HorizontalAlignment="Left" Height="130" Stroke="#FF8F69C5" VerticalAlignment="Top" Width="10"/>
         <Label Content="Mayfair Taxi" HorizontalAlignment="Left" Margin="15,5,0,0" VerticalAlignment="Top" Height="36" Width="175" FontSize="18" Foreground="#FF494949"/>
         <Label Content="Specializing in the Calgary&#xD;&#xA;Southwest" HorizontalAlignment="Left" Margin="15,32,0,0" VerticalAlignment="Top" Height="66" Width="175" FontFamily="Segoe UI Light" FontSize="14" Foreground="#FF494949"/>
         <Label Content="(403)-456-7549&#xD;&#xA;(403)-597-TAXI" HorizontalAlignment="Left" Margin="15,78,0,-14" VerticalAlignment="Top" Height="66" Width="175" FontFamily="Segoe UI Semilight" FontSize="14" Foreground="#FF494949"/>
