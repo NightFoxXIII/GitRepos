@@ -15,7 +15,7 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="152"/>
         <Label Content="From: Your location" HorizontalAlignment="Left" Height="26" Margin="10,65,0,0" VerticalAlignment="Top" Width="180" Foreground="#FF494949" FontFamily="Segoe UI Semilight"/>
         <Label HorizontalAlignment="Left" Height="26" Margin="10,91,0,0" VerticalAlignment="Top" Width="180" Foreground="#FF494949" FontFamily="Segoe UI Semilight" Loaded="Destination"/>
-        <Border Margin="0,122,0,235" MouseLeftButtonDown="PedestrianDirections" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" BorderBrush="#FFEC6060">
+        <Border Margin="0,122,0,235" MouseLeftButtonDown="CabDirections" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" BorderBrush="#FFEC6060">
             <Grid>
                 <Rectangle Fill="#FFEC4848" HorizontalAlignment="Left" Height="70" Stroke="#FFEC4848" VerticalAlignment="Top" Width="10"/>
                 <Label Content="By Vehicle" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
@@ -23,7 +23,7 @@
                 <Label Content="Contact a taxi service&#xA;" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Height="28"/>
             </Grid>
         </Border>
-        <Border Margin="0,192,0,165" MouseLeftButtonDown="PedestrianDirections" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" BorderBrush="#FFF3EE72">
+        <Border Margin="0,192,0,165" MouseLeftButtonDown="PublicTransitDirections" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" BorderBrush="#FFF3EE72">
             <Grid>
                 <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="70" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
                 <Label Content="By Public Transit" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>

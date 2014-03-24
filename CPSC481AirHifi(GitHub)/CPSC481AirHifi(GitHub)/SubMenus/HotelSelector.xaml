@@ -17,12 +17,12 @@
                 <Image HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="20" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_7462.png" Margin="168,7,0,0" Opacity="0.6"/>
             </Grid>
             <Rectangle Height="1" Stroke="#FFCDCDCD" Margin="15,0,0,0" HorizontalAlignment="Left" Width="175"/>
-            <Label Content="Food" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="FoodSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
+            <Label Content="Restaurants " Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="FoodSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
             <Label Content="Events" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="EventSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
             <Label Content="Directions" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="DirectionsSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
         </StackPanel>
         <Image Margin="545,213,0,0" Source="/CPSC481AirHifi(GitHub);component/Images/Maps/hotels.png" StretchDirection="DownOnly" Stretch="UniformToFill"/>
-        <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="147" Margin="0,280,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
+        <Rectangle Fill="#FF53F1F1" HorizontalAlignment="Left" Height="147" Margin="0,280,0,0" Stroke="#FF53F1F1" VerticalAlignment="Top" Width="10"/>
         <StackPanel HorizontalAlignment="Left" Height="213" Margin="200,0,0,0" VerticalAlignment="Top" Width="632">
             <Label Content="Hotels" Margin="55,0,0,0" FontFamily="Segoe UI Semilight" FontSize="18" Foreground="#FF494949"/>
             <Rectangle Height="1" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="493" HorizontalAlignment="Left" Margin="59,0,0,0"/>

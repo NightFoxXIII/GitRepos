@@ -16,17 +16,15 @@ using System.Windows.Threading;
 namespace CPSC481AirHifi_GitHub_
 {
     /// <summary>
-    /// Interaction logic for HotelReview.xaml
+    /// Interaction logic for EventSelector.xaml
     /// </summary>
-    public partial class HotelReview : UserControl, ISwitchable
+    public partial class EventSelector : UserControl, ISwitchable
     {
         private Session session;
-        private TextBox hotelreviewsbox;
-        private TextBox hotelreviewtextbox;
         private int i = 0;
         private int c = 2;
 
-        public HotelReview()
+        public EventSelector()
         {
             InitializeComponent();
             TaxiAdvert.Child = new CabAdvert1();
@@ -62,34 +60,6 @@ namespace CPSC481AirHifi_GitHub_
                 case 3:
                     TaxiAdvert.Child = new CabAdvert3();
                     break;
-            }
-        }
-        #endregion
-
-        #region Click Events
-        private void AddReview(object sender, RoutedEventArgs e)
-        {
-            session.addHotelReview(hotelreviewtextbox.Text);
-            hotelreviewtextbox.Text = "";
-            hotelreviewsbox.Text = session.getHotelReviews();
-        }
-
-        private void ClearTextBox(object sender, RoutedEventArgs e)
-        {
-            var box = sender as TextBox;
-            box.Text = "";
-        }
-        #endregion
-
-        #region Keyboard Events
-        public void EnterKeyPressed(object sender, KeyEventArgs e)
-        {
-            var box = sender as TextBox;
-            if (e.Key == Key.Enter)
-            {
-                session.addHotelReview(hotelreviewtextbox.Text);
-                hotelreviewtextbox.Text = "";
-                hotelreviewsbox.Text = session.getHotelReviews();
             }
         }
         #endregion
@@ -147,25 +117,6 @@ namespace CPSC481AirHifi_GitHub_
             var content = sender as Border;
             content.Child = new DefaultGreyhoundRoute();
         }
-
-        private void HotelName(object sender, RoutedEventArgs e)
-        {
-            var label = sender as Label;
-            label.Content = "Reviews: " + session.gethotel();
-        }
-
-        private void HotelReviews(object sender, RoutedEventArgs e)
-        {
-            var box = sender as TextBox;
-            hotelreviewsbox = box;
-            box.Text = session.getHotelReviews();
-        }
-
-        private void ReviewBox(object sender, RoutedEventArgs e)
-        {
-            var box = sender as TextBox;
-            hotelreviewtextbox = box;
-        }
         #endregion
 
         #region Window Transitions
@@ -177,24 +128,23 @@ namespace CPSC481AirHifi_GitHub_
 
         private void BusSelectionChanged(object sender, RoutedEventArgs e)
         {
+            session.setpreviousscreen("eventscreen");
             Switcher.Switch(new BusSelector(), session);
+        }
+
+        private void HotelSearch(object sender, RoutedEventArgs e)
+        {
+            Switcher.Switch(new HotelSelector(), session);
         }
 
         private void FoodSearch(object sender, RoutedEventArgs e)
         {
-            session.poppreviousscreen();
             Switcher.Switch(new FoodSelector(), session);
-        }
-
-        private void EventSearch(object sender, RoutedEventArgs e)
-        {
-            session.poppreviousscreen();
-            Switcher.Switch(new EventSelector(), session);
         }
 
         private void DirectionsSearch(object sender, RoutedEventArgs e)
         {
-            session.setpreviousscreen("hotelreviewsscreen");
+            session.setpreviousscreen("eventscreen");
             Switcher.Switch(new RouteSearchSplashScreen(), session);
         }
         #endregion

@@ -63,6 +63,11 @@ namespace CPSC481AirHifi_GitHub_
             return screenhistory.Pop();
         }
 
+        public void poppreviousscreen()
+        {
+            screenhistory.Pop();
+        }
+
         public string getHotelReviews()
         {
             switch (hotel)

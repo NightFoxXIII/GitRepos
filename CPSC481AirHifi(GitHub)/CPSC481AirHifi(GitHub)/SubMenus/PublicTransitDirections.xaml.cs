@@ -15,13 +15,13 @@ using System.Windows.Shapes;
 namespace CPSC481AirHifi_GitHub_
 {
     /// <summary>
-    /// Interaction logic for RouteSearch.xaml
+    /// Interaction logic for PublicTransitDirections.xaml
     /// </summary>
-    public partial class RouteSearch : UserControl, ISwitchable
+    public partial class PublicTransitDirections : UserControl, ISwitchable
     {
         private Session session;
 
-        public RouteSearch()
+        public PublicTransitDirections()
         {
             InitializeComponent();
         }
@@ -31,6 +31,18 @@ namespace CPSC481AirHifi_GitHub_
         {
             var label = sender as Label;
             label.Content = "To: " + session.getdestination();
+        }
+
+        public void TitleLoader(object sender, RoutedEventArgs e)
+        {
+            var label = sender as Label;
+            label.Content = "Public Transit Scheduals";
+        }
+
+        public void DirectionsLoader(object sender, RoutedEventArgs e)
+        {
+            var label = sender as Label;
+            label.Content = "Sorry, but our service is currently down. All of our tiny penguins when on strike.";
         }
 
         public void TaxiTime(object sender, RoutedEventArgs e)
@@ -46,23 +58,6 @@ namespace CPSC481AirHifi_GitHub_
                     break;
                 case "The Purple Hotel":
                     label.Content = "Estimated time of arrival: 16 minutes";
-                    break;
-            }
-        }
-
-        public void MapLoader(object sender, RoutedEventArgs e)
-        {
-            var image = sender as Image;
-            switch (session.getdestination())
-            {
-                case "Hotel Arts":
-                    image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/short route.png", UriKind.RelativeOrAbsolute));
-                    break;
-                case "Hotel Blue":
-                    image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/medium route.png", UriKind.RelativeOrAbsolute));
-                    break;
-                case "The Purple Hotel":
-                    image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/long route.png", UriKind.RelativeOrAbsolute));
                     break;
             }
         }
@@ -125,19 +120,11 @@ namespace CPSC481AirHifi_GitHub_
 
         private void PedestrianDirections(object sender, RoutedEventArgs e)
         {
-            session.setpreviousscreen("RouteSearch");
             Switcher.Switch(new PedestrianDirections(), session);
-        }
-
-        private void PublicTransitDirections(object sender, RoutedEventArgs e)
-        {
-            session.setpreviousscreen("RouteSearch");
-            Switcher.Switch(new PublicTransitDirections(), session);
         }
 
         private void CabDirections(object sender, RoutedEventArgs e)
         {
-            session.setpreviousscreen("RouteSearch");
             Switcher.Switch(new CabCompany(), session);
         }
 

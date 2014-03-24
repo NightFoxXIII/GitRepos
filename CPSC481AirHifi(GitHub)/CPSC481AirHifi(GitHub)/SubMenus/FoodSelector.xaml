@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="CPSC481AirHifi_GitHub_.HotelReview"
+﻿<UserControl x:Class="CPSC481AirHifi_GitHub_.FoodSelector"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,8 +8,9 @@
     <Grid Background="White">
         <Image Height="26" RenderTransformOrigin="0.57,-1.403" Margin="215,9,591,392" Width="26" Source="/CPSC481AirHifi(GitHub);component/Icon/Back.png" Opacity="0.5" MouseLeftButtonDown="BackButtonPress"/>
         <StackPanel Height="Auto" x:Name="stackPanel1" Background="#9BFFFFFF" Margin="0,0,632,0">
-            <Border BorderThickness="0" Height="130" x:Name="TaxiAdvert"/>            <Border BorderBrush="#FFF78080" BorderThickness="0" Height="70" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
-            <Border BorderBrush="#FFFD9067" BorderThickness="0" Height="80" Loaded="GreyhoundBoxLoaded" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
+            <Border BorderThickness="0" Height="130" x:Name="TaxiAdvert"/>
+            <Border BorderBrush="#FFF78080" BorderThickness="0" Height="70" Width="200" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
+            <Border BorderBrush="#FFFD9067" BorderThickness="0" Height="80" Width="200" Loaded="GreyhoundBoxLoaded" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
             <Grid>
                 <Border Margin="12,0,23,0" >
                     <Label Content="Search for" FontFamily="Segoe UI Semilight" FontSize="16" Foreground="#FF494949" />
@@ -17,18 +18,23 @@
                 <Image HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="20" Source="/CPSC481AirHifi(GitHub);component/Icon/icon_7462.png" Margin="168,7,0,0" Opacity="0.6"/>
             </Grid>
             <Rectangle Height="1" Stroke="#FFCDCDCD" Margin="15,0,0,0" HorizontalAlignment="Left" Width="175"/>
-            <Label Content="Restaurants " Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="FoodSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
+            <Label Content="Hotels" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="HotelSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
             <Label Content="Events" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="EventSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
             <Label Content="Directions" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="DirectionsSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
         </StackPanel>
+        <Image Margin="545,213,0,0" Source="/CPSC481AirHifi(GitHub);component/Images/Maps/current location small.png" StretchDirection="DownOnly" Stretch="UniformToFill"/>
         <Rectangle Fill="#FF53F1F1" HorizontalAlignment="Left" Height="147" Margin="0,280,0,0" Stroke="#FF53F1F1" VerticalAlignment="Top" Width="10"/>
-        <StackPanel HorizontalAlignment="Left" Height="427" Margin="200,0,0,0" VerticalAlignment="Top" Width="632">
-            <Label Loaded="HotelName" Margin="55,0,24,0" FontFamily="Segoe UI Semilight" FontSize="18" Foreground="#FF494949"/>
-            <Rectangle Height="1" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="549" HorizontalAlignment="Left" Margin="59,5,0,10"/>
-            <TextBox Height="255" TextWrapping="Wrap" Loaded="HotelReviews" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF7E7E7E" SelectionBrush="#FFB2B3B4" Margin="55,0,24,15" FontFamily="Segoe UI Semilight" IsManipulationEnabled="True" IsEnabled="False"/>
-            <TextBox Height="77" KeyDown="EnterKeyPressed" GotFocus="ClearTextBox" Loaded="ReviewBox" TextWrapping="Wrap" Margin="55,0,24,0" Background="{x:Null}" BorderBrush="#FFE0E0E0" Foreground="#FF7E7E7E" SelectionBrush="#FFFCFEFF" Text="Please type your review here" Padding="5"/>
-            <Label Content="Post Reviews" Foreground="#FF7E7E7E" Margin="0,0,24,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="AddReview" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Right" Width="112" FontSize="13"/>
+        <StackPanel HorizontalAlignment="Left" Height="213" Margin="200,0,0,0" VerticalAlignment="Top" Width="632">
+            <Label Content="Restaurants " Margin="55,0,0,0" FontFamily="Segoe UI Semilight" FontSize="18" Foreground="#FF494949"/>
+            <Rectangle Height="1" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="493" HorizontalAlignment="Left" Margin="59,0,0,0"/>
+            <Border BorderBrush="#FF7B94D8" Margin="10,10,10,0">
+                <Grid Margin="0,0,10,0">
+                    <Label Content="There are no restaurants in your city" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Height="31" Width="384" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
+                    <Label Content="Isn't that sad" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top" Width="592" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E"/>
+                </Grid>
+            </Border>
         </StackPanel>
         <Rectangle HorizontalAlignment="Left" Height="427" Margin="200,0,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="200,213,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="632"/>
     </Grid>
 </UserControl>

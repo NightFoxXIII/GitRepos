@@ -18,7 +18,7 @@
             </Grid>
             <Rectangle Height="1" Stroke="#FFCDCDCD" Margin="15,0,0,0" HorizontalAlignment="Left" Width="175"/>
             <Label Content="Hotels" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,4,0,0" MouseLeftButtonDown="HotelSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
-            <Label Content="Food" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="FoodSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
+            <Label Content="Restaurants " Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="FoodSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
             <Label Content="Events" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="EventSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
             <Label Content="Directions" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="DirectionsSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
         </StackPanel>

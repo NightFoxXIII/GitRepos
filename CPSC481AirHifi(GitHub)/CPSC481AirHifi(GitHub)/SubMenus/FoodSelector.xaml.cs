@@ -16,20 +16,15 @@ using System.Windows.Threading;
 namespace CPSC481AirHifi_GitHub_
 {
     /// <summary>
-    /// Interaction logic for HotelSelector.xaml
+    /// Interaction logic for FoodSelector.xaml
     /// </summary>
-    public partial class HotelSelector : UserControl, ISwitchable
+    public partial class FoodSelector : UserControl, ISwitchable
     {
         private Session session;
-        private Label hotelname;
-        private StackPanel hoteldescriptionpanel;
-        private TextBox hoteldecription;
-        private string name;
-        private string description;
         private int i = 0;
         private int c = 2;
 
-        public HotelSelector()
+        public FoodSelector()
         {
             InitializeComponent();
             TaxiAdvert.Child = new CabAdvert1();
@@ -66,35 +61,6 @@ namespace CPSC481AirHifi_GitHub_
                     TaxiAdvert.Child = new CabAdvert3();
                     break;
             }
-        }
-        #endregion
-
-        #region Click Events
-        public void HotelASelected(object sender, RoutedEventArgs e)
-        {
-            name = "Hotel Arts";
-            hotelname.Content = name;
-            hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
-            description = "I am the bannana hotel";
-            hoteldecription.Text = description;
-        }
-
-        public void HotelBSelected(object sender, RoutedEventArgs e)
-        {
-            name = "Hotel Blue";
-            hotelname.Content = name;
-            hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
-            description = "I am the blue hotel";
-            hoteldecription.Text = description;
-        }
-
-        public void HotelCSelected(object sender, RoutedEventArgs e)
-        {
-            name = "The Purple Hotel";
-            hotelname.Content = name;
-            hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
-            description = "We are the small purple hotel monster";
-            hoteldecription.Text = description;
         }
         #endregion
 
@@ -151,50 +117,6 @@ namespace CPSC481AirHifi_GitHub_
             var content = sender as Border;
             content.Child = new DefaultGreyhoundRoute();
         }
-
-        private void HotelName(object sender, RoutedEventArgs e)
-        {
-            var label = sender as Label;
-            hotelname = label;
-            if (session.gethotel() == null)
-            {
-                return;
-            }
-            else
-            {
-                name = session.gethotel();
-                label.Content = name;
-            }
-        }
-
-        private void HotelDescriptionPanel(object sender, RoutedEventArgs e)
-        {
-            var panel = sender as StackPanel;
-            hoteldescriptionpanel = panel;
-            if (session.gethotel() == null)
-            {
-                hoteldescriptionpanel.Visibility = System.Windows.Visibility.Hidden;
-            }
-            else
-            {
-                hoteldescriptionpanel.Visibility = System.Windows.Visibility.Visible;
-            }
-        }
-
-        private void HotelDescription(object sender, RoutedEventArgs e)
-        {
-            var box = sender as TextBox;
-            hoteldecription = box;
-            if (session.gethoteldescription() == null)
-            {
-                return;
-            }
-            else
-            {
-                description = session.gethoteldescription();
-                box.Text = description;
-            }
-        }
         #endregion
 
         #region Window Transitions
@@ -206,13 +128,13 @@ namespace CPSC481AirHifi_GitHub_
 
         private void BusSelectionChanged(object sender, RoutedEventArgs e)
         {
-            session.setpreviousscreen("hotelscreen");
+            session.setpreviousscreen("foodscreen");
             Switcher.Switch(new BusSelector(), session);
         }
 
-        private void FoodSearch(object sender, RoutedEventArgs e)
+        private void HotelSearch(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new FoodSelector(), session);
+            Switcher.Switch(new HotelSelector(), session);
         }
 
         private void EventSearch(object sender, RoutedEventArgs e)
@@ -220,35 +142,10 @@ namespace CPSC481AirHifi_GitHub_
             Switcher.Switch(new EventSelector(), session);
         }
 
-        private void SelectHotel(object sender, RoutedEventArgs e)
-        {
-            session.sethotel(name);
-            session.sethoteldescription(description);
-            session.setpreviousscreen("hotelscreen");
-            Switcher.Switch(new LaunchScreen(), session);
-        }
-
         private void DirectionsSearch(object sender, RoutedEventArgs e)
         {
-            session.setpreviousscreen("hotelscreen");
+            session.setpreviousscreen("foodscreen");
             Switcher.Switch(new RouteSearchSplashScreen(), session);
-        }
-        private void HotelDirectionsSearch(object sender, RoutedEventArgs e)
-        {
-            session.setdestination(name);
-            session.sethotel(name);
-            session.sethoteldescription(description);
-            session.setpreviousscreen("hotelscreen");
-            Switcher.Switch(new RouteSearch(), session);
-        }
-
-        private void HotelReviewSearch(object sender, RoutedEventArgs e)
-        {
-            session.setdestination(name);
-            session.sethotel(name);
-            session.sethoteldescription(description);
-            session.setpreviousscreen("hotelscreen");
-            Switcher.Switch(new HotelReview(), session);
         }
         #endregion
 

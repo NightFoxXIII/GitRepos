@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="CPSC481AirHifi_GitHub_.PedestrianDirections"
+﻿<UserControl x:Class="CPSC481AirHifi_GitHub_.CabCompany"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -21,7 +21,7 @@
                 <Label Content="Show transit schedual&#xA;" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="166" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Height="28"/>
             </Grid>
         </Border>
-        <Border Margin="0,262,0,95" BorderBrush="#FF9BF381" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
+        <Border Margin="0,262,0,95" BorderBrush="#FF9BF381" MouseLeftButtonDown="PedestrianDirections" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
             <Grid>
                 <Rectangle Fill="#FF73E452" HorizontalAlignment="Left" Height="70" Stroke="#FF73E452" VerticalAlignment="Top" Width="10"/>
                 <Label Content="By Foot" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>
@@ -29,7 +29,7 @@
                 <Label Content="Show route&#xA;" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="146" FontSize="10" FontFamily="Segoe UI Light" Foreground="#FF7E7E7E" Height="28"/>
             </Grid>
         </Border>
-        <Border Margin="0,122,0,235"  MouseLeftButtonDown="CabDirections" MouseEnter="BorderCovered" MouseLeave="BorderUncovered" BorderBrush="#FFEC6060">
+        <Border Margin="0,122,0,235"  MouseEnter="BorderCovered" MouseLeave="BorderUncovered" BorderBrush="#FFEC6060">
             <Grid>
                 <Rectangle Fill="#FFEC4848" HorizontalAlignment="Left" Height="70" Stroke="#FFEC4848" VerticalAlignment="Top" Width="10"/>
                 <Label Content="By Vehicle" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>

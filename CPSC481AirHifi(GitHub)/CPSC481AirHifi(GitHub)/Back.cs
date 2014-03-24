@@ -28,6 +28,15 @@ namespace CPSC481AirHifi_GitHub_
                 case "RouteSearch":
                     Switcher.Switch(new RouteSearch(), session);
                     break;
+                case "foodscreen":
+                    Switcher.Switch(new FoodSelector(), session);
+                    break;
+                case "eventscreen":
+                    Switcher.Switch(new EventSelector(), session);
+                    break;
+                case "hotelreviewsscreen":
+                    Switcher.Switch(new HotelReview(), session);
+                    break;
             }
         }
 
