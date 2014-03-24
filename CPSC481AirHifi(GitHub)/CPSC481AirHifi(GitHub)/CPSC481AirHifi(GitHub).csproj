@@ -100,9 +100,6 @@
     <Compile Include="SubMenus\RouteSearch.xaml.cs">
       <DependentUpon>RouteSearch.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SubMenus\canvas_weat.xaml.cs">
-      <DependentUpon>canvas_weat.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Switcher.cs" />
     <Page Include="SubMenus\HotelReview.xaml">
       <SubType>Designer</SubType>
@@ -157,10 +154,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="SubMenus\RouteSearch.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SubMenus\canvas_weat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -234,6 +227,34 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icon\icon_19308.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Maps\blue and hotel 1.png" />
+    <Resource Include="Images\Maps\blue and hotel 2.png" />
+    <Resource Include="Images\Maps\blue and hotel 3.png" />
+    <Resource Include="Images\Maps\blue route.png" />
+    <Resource Include="Images\Maps\green and hotel 1.png" />
+    <Resource Include="Images\Maps\green and hotel 2.png" />
+    <Resource Include="Images\Maps\green and hotel 3.png" />
+    <Resource Include="Images\Maps\green route.png" />
+    <Resource Include="Images\Maps\greyhound.png" />
+    <Resource Include="Images\Maps\hotels.png" />
+    <Resource Include="Images\Maps\long route.png" />
+    <Resource Include="Images\Maps\map all routes.png" />
+    <Resource Include="Images\Maps\medium route.png" />
+    <Resource Include="Images\Maps\red and hotel 1.png" />
+    <Resource Include="Images\Maps\red and hotel 2.png" />
+    <Resource Include="Images\Maps\red and hotel 3.png" />
+    <Resource Include="Images\Maps\red route.png" />
+    <Resource Include="Images\Maps\short route.png" />
+    <Resource Include="Images\Maps\Simple Large Map.png" />
+    <Resource Include="Images\Maps\yellow and hotel 1.png" />
+    <Resource Include="Images\Maps\yellow and hotel 2.png" />
+    <Resource Include="Images\Maps\yellow and hotel 3.png" />
+    <Resource Include="Images\Maps\yellow route.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Maps\current location.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

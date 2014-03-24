@@ -12,7 +12,7 @@
         </Grid.ColumnDefinitions>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="1" Margin="0,58,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="152"/>
         <Label Content="Bus Routes" HorizontalAlignment="Center" Height="34" Margin="0,65,-0.2,0" VerticalAlignment="Top" Width="89" Foreground="#FF494949" FontFamily="Segoe UI Semilight" FontSize="16"/>
-        <Image HorizontalAlignment="Left" Height="427" VerticalAlignment="Top" Width="632" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="Both" Stretch="Fill" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="427" VerticalAlignment="Top" Width="632" Source="/CPSC481AirHifi(GitHub);component/Images/Maps/map all routes.png" StretchDirection="Both" Stretch="Fill" Grid.Column="1"/>
         <Border Margin="0,104,0,253" Height="70" MouseLeftButtonDown="Route1ASelected" BorderBrush="#FFF78080" MouseEnter="BorderCovered" MouseLeave="BorderUncovered">
             <Grid>
                 <Label Content="Route 1A" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="31" Width="190" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FF494949"/>

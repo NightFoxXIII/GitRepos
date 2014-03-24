@@ -9,8 +9,8 @@
         <Image Height="26" RenderTransformOrigin="0.57,-1.403" Margin="215,9,591,392" Width="26" Source="/CPSC481AirHifi(GitHub);component/Icon/Back.png" Opacity="0.5" MouseLeftButtonDown="BackButtonPress"/>
         <StackPanel Height="Auto" x:Name="stackPanel1" Background="#9BFFFFFF" Margin="0,0,632,0">
             <Image Height="130" x:Name="taxi_ads" Stretch="Uniform" Width="200" Source="/CPSC481AirHifi%28GitHub%29;component/Images/taxi_1.jpg" ImageFailed="taxi_ads_ImageFailed" />
-            <Border BorderBrush="#FFF78080" BorderThickness="0" Height="70" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
-            <Border BorderBrush="#FFFD9067" BorderThickness="0" Height="80" Loaded="GreyhoundBoxLoaded" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
+            <Border BorderBrush="#FFF78080" BorderThickness="0" Height="70" Width="200" Loaded="BusBoxLoaded" MouseLeftButtonDown="BusSelectionChanged" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
+            <Border BorderBrush="#FFFD9067" BorderThickness="0" Height="80" Width="200" Loaded="GreyhoundBoxLoaded" MouseEnter="BorderCovered" MouseLeave="BorderUncovered"/>
             <Grid>
                 <Border Margin="12,0,23,0" >
                     <Label Content="Search for" FontFamily="Segoe UI Semilight" FontSize="16" Foreground="#FF494949" />
@@ -22,7 +22,7 @@
             <Label Content="Events" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="EventSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
             <Label Content="Directions" Foreground="#FF7E7E7E" Margin="10,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="DirectionsSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered"/>
         </StackPanel>
-        <Image Margin="545,213,0,0" Source="/CPSC481AirHifi(GitHub);component/Images/Simple Large Map.png" StretchDirection="DownOnly" Stretch="UniformToFill"/>
+        <Image Margin="545,213,0,0" Source="/CPSC481AirHifi(GitHub);component/Images/Maps/hotels.png" StretchDirection="DownOnly" Stretch="UniformToFill"/>
         <Rectangle Fill="#FFF1EA53" HorizontalAlignment="Left" Height="147" Margin="0,280,0,0" Stroke="#FFF1EA53" VerticalAlignment="Top" Width="10"/>
         <StackPanel HorizontalAlignment="Left" Height="213" Margin="200,0,0,0" VerticalAlignment="Top" Width="632">
             <Label Content="Hotels" Margin="55,0,0,0" FontFamily="Segoe UI Semilight" FontSize="18" Foreground="#FF494949"/>

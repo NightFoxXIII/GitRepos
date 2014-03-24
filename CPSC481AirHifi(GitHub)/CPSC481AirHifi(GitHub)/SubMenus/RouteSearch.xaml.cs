@@ -50,6 +50,23 @@ namespace CPSC481AirHifi_GitHub_
             }
         }
 
+        public void MapLoader(object sender, RoutedEventArgs e)
+        {
+            var image = sender as Image;
+            switch (session.getdestination())
+            {
+                case "Hotel Arts":
+                    image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/short route.png", UriKind.RelativeOrAbsolute));
+                    break;
+                case "Hotel Blue":
+                    image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/medium route.png", UriKind.RelativeOrAbsolute));
+                    break;
+                case "The Purple Hotel":
+                    image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/long route.png", UriKind.RelativeOrAbsolute));
+                    break;
+            }
+        }
+
          public void TransitTime(object sender, RoutedEventArgs e)
         {
             var label = sender as Label;

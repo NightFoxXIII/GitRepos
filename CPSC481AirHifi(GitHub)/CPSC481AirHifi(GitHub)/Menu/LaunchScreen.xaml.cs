@@ -89,15 +89,19 @@ namespace CPSC481AirHifi_GitHub_
             {
                 case "Route1A":
                     content.Child = new Route1A();
+                    content.BorderBrush = new BrushConverter().ConvertFromString("#FFF78080") as SolidColorBrush;
                     break;
                 case "Route1B":
                     content.Child = new Route1B();
+                    content.BorderBrush = new BrushConverter().ConvertFromString("#FFEEE97B") as SolidColorBrush;
                     break;
                 case "Route2A":
                     content.Child = new Route2A();
+                    content.BorderBrush = new BrushConverter().ConvertFromString("#FF8FE676") as SolidColorBrush;
                     break;
                 case "Route2B":
                     content.Child = new Route2B();
+                    content.BorderBrush = new BrushConverter().ConvertFromString("#FF6891E6") as SolidColorBrush;
                     break;
             }
 
@@ -107,6 +111,79 @@ namespace CPSC481AirHifi_GitHub_
         {
             var content = sender as Border;
             content.Child = new DefaultGreyhoundRoute();
+        }
+
+        public void MapLoader(object sender, RoutedEventArgs e)
+        {
+            var image = sender as Image;
+            switch (session.gethotel())
+            {
+                case "Hotel Arts":
+                    switch (session.getbusroute()){
+                        case "Route1A":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/red and hotel 1.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route1B":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/yellow and hotel 1.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route2A":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/green and hotel 1.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route2B":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/blue and hotel 1.png", UriKind.RelativeOrAbsolute));
+                            break;
+                    }
+                    break;
+                case "Hotel Blue":
+                    switch (session.getbusroute()){
+                        case "Route1A":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/red and hotel 2.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route1B":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/yellow and hotel 2.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route2A":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/green and hotel 2.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route2B":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/blue and hotel 2.png", UriKind.RelativeOrAbsolute));
+                            break;
+                    }
+                    break;
+                case "The Purple Hotel":
+                    switch (session.getbusroute()){
+                        case "Route1A":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/red and hotel 3.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route1B":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/yellow and hotel 3.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route2A":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/green and hotel 3.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route2B":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/blue and hotel 3.png", UriKind.RelativeOrAbsolute));
+                            break;
+                    }
+                    break;
+                case null:
+                    switch (session.getbusroute())
+                    {
+                        case "Route1A":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/red route.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route1B":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/yellow route.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route2A":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/green route.png", UriKind.RelativeOrAbsolute));
+                            break;
+                        case "Route2B":
+                            image.Source = (ImageSource)new BitmapImage(new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Maps/blue route.png", UriKind.RelativeOrAbsolute));
+                            break;
+                    }
+                    break;
+            }
         }
         #endregion
 

@@ -28,7 +28,7 @@
             <Rectangle Height="1" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="549" HorizontalAlignment="Left" Margin="59,5,0,10"/>
             <TextBox Height="255" TextWrapping="Wrap" Loaded="HotelReviews" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF7E7E7E" SelectionBrush="#FFB2B3B4" Margin="55,0,24,15" FontFamily="Segoe UI Semilight" IsManipulationEnabled="True" IsEnabled="False"/>
             <TextBox Height="77" KeyDown="EnterKeyPressed" GotFocus="ClearTextBox" Loaded="ReviewBox" TextWrapping="Wrap" Margin="55,0,24,0" Background="{x:Null}" BorderBrush="#FFE0E0E0" Foreground="#FF7E7E7E" SelectionBrush="#FFFCFEFF" Text="Please type your review here" Padding="5"/>
-            <Label Content="Post Reviews" Foreground="#FF7E7E7E" Margin="0,0,48,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="AddReview" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Right" Width="88" FontSize="13"/>
+            <Label Content="Post Reviews" Foreground="#FF7E7E7E" Margin="0,0,24,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="AddReview" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Right" Width="112" FontSize="13"/>
         </StackPanel>
         <Rectangle HorizontalAlignment="Left" Height="427" Margin="200,0,0,0" Stroke="#FFCDCDCD" VerticalAlignment="Top" Width="1"/>
     </Grid>
