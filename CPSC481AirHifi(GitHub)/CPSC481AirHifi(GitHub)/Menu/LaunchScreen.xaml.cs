@@ -22,11 +22,12 @@ namespace CPSC481AirHifi_GitHub_
     {
         private Session session = new Session();
         private int i = 0;
+        private int c = 2;
 
-        #region Image Timer Stuff
         public LaunchScreen()
         {
             InitializeComponent();
+            TaxiAdvert.Child = new CabAdvert1();
             DispatcherTimer dispatchertimer = new DispatcherTimer();
 
             dispatchertimer.Tick += new EventHandler(dispatchertimer_Tick);
@@ -34,19 +35,36 @@ namespace CPSC481AirHifi_GitHub_
             dispatchertimer.Start();
         }
 
+        #region Image Timer Stuff
         private void dispatchertimer_Tick(object sender, EventArgs e)
         {
             if (i >= 3)
+            {
                 i = 0;
+                c++;
+                if (c >= 4)
+                    c = 1;
+            }
+                
             i++;
             image_weather1.Source = (ImageSource)new BitmapImage(
-                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Weather/weat_img" + (i % 100) + ".png", UriKind.RelativeOrAbsolute));
+                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Weather/weat_img" + (c % 100) + ".png", UriKind.RelativeOrAbsolute));
 
-            taxi_ads.Source = (ImageSource)new BitmapImage(
-                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/taxi_" + (i % 100) + ".jpg", UriKind.RelativeOrAbsolute));
+            switch (c)
+            {
+                case 1:
+                    TaxiAdvert.Child = new CabAdvert1();
+                    break;
+                case 2:
+                    TaxiAdvert.Child = new CabAdvert2();
+                    break;
+                case 3:
+                    TaxiAdvert.Child = new CabAdvert3();
+                    break;
+            }        
 
            image_events.Source = (ImageSource)new BitmapImage(
-                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Events/event" + (i % 100) + ".jpg", UriKind.RelativeOrAbsolute));
+                new Uri("/CPSC481AirHifi%28GitHub%29;component/Images/Events/event" + (c % 100) + ".jpg", UriKind.RelativeOrAbsolute));
         }
 
         private void taxi_ads_ImageFailed(object sender, ExceptionRoutedEventArgs e)

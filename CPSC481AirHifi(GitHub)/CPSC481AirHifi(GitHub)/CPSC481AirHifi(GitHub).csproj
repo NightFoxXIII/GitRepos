@@ -58,6 +58,15 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Back.cs" />
+    <Compile Include="MainScreenPanelUIs\Cab Adverts\CabAdvert3.xaml.cs">
+      <DependentUpon>CabAdvert3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreenPanelUIs\Cab Adverts\CabAdvert2.xaml.cs">
+      <DependentUpon>CabAdvert2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreenPanelUIs\Cab Adverts\CabAdvert1.xaml.cs">
+      <DependentUpon>CabAdvert1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Data.cs" />
     <Compile Include="SubMenus\HotelReview.xaml.cs">
       <DependentUpon>HotelReview.xaml</DependentUpon>
@@ -101,6 +110,18 @@
       <DependentUpon>RouteSearch.xaml</DependentUpon>
     </Compile>
     <Compile Include="Switcher.cs" />
+    <Page Include="MainScreenPanelUIs\Cab Adverts\CabAdvert3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainScreenPanelUIs\Cab Adverts\CabAdvert2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainScreenPanelUIs\Cab Adverts\CabAdvert1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SubMenus\HotelReview.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
