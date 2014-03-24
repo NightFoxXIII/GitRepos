@@ -58,6 +58,7 @@
                 <Grid HorizontalAlignment="Right">
                     <Label Content="Select Hotel" Foreground="#FF7E7E7E" Margin="-285,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="SelectHotel" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Left" Width="119" FontSize="13"/>
                     <Label Content="Get Directions" Foreground="#FF7E7E7E" Margin="-69,0,0,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="HotelDirectionsSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Right" Width="118" FontSize="13"/>
+                    <Label Content="Reviews" Foreground="#FF7E7E7E" Margin="-164,0,151,0" BorderThickness="2,0,0,0" MouseLeftButtonDown="HotelReviewSearch" MouseEnter="LabelCovered" MouseLeave="LabelUncovered" HorizontalAlignment="Right" Width="62" FontSize="13"/>
                 </Grid>
             </Border>
         </StackPanel>
