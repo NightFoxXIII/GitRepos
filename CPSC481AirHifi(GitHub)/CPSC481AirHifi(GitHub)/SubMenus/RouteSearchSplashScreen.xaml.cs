@@ -38,8 +38,8 @@ namespace CPSC481AirHifi_GitHub_
         #region Window Transitions
         private void BackButtonPressed(object sender, RoutedEventArgs e)
         {
-            //Check the needed flags in state here and jump to proper screen
-            Switcher.Switch(new LaunchScreen(), session);
+            var back = new Back();
+            back.StepBack(session);
         }
 
         private void HomeButtonPressed(object sender, RoutedEventArgs e)

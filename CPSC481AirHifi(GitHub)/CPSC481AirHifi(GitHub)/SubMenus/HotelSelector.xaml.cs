@@ -187,7 +187,8 @@ namespace CPSC481AirHifi_GitHub_
         #region Window Transitions
         private void BackButtonPress(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new LaunchScreen(), session);
+            var back = new Back();
+            back.StepBack(session);
         }
 
         private void BusSelectionChanged(object sender, RoutedEventArgs e)

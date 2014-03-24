@@ -88,14 +88,8 @@ namespace CPSC481AirHifi_GitHub_
         #region Window Transitions
         private void BackButtonPressed(object sender, RoutedEventArgs e)
         {
-            if (session.getpreviousscreen() == "hotelscreen")
-            {
-                Switcher.Switch(new HotelSelector(), session);
-            }
-            else
-            {
-                Switcher.Switch(new RouteSearchSplashScreen(), session);
-            }
+            var back = new Back();
+            back.StepBack(session);
         }
 
         private void HomeButtonPressed(object sender, RoutedEventArgs e)

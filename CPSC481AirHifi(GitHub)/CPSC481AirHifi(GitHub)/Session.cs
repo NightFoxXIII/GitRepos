@@ -8,6 +8,7 @@ namespace CPSC481AirHifi_GitHub_
     public class Session
     {
         private string previousscreen;
+        private string previouspreviousscreen;
         private string busroute = "Route1A";
         private string hotel;
         private string hoteldescription;
@@ -54,12 +55,15 @@ namespace CPSC481AirHifi_GitHub_
 
         public void setpreviousscreen(string currentscreen)
         {
+            previouspreviousscreen = previousscreen;
             previousscreen = currentscreen;
         }
 
         public string getpreviousscreen()
         {
-            return previousscreen;
+            string tempscreen = previousscreen;
+            previousscreen = previouspreviousscreen;
+            return tempscreen;
         }
     }
 }

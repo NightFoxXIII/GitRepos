@@ -28,29 +28,34 @@ namespace CPSC481AirHifi_GitHub_
         #region Window Transitions
         private void BackButtonPress(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new LaunchScreen(), session);
+            var back = new Back();
+            back.StepBack(session);
         }
 
         private void Route1ASelected(object sender, MouseButtonEventArgs e)
         {
+            session.setpreviousscreen("busselectionscreen");
             session.setbusroute("Route1A");
             Switcher.Switch(new LaunchScreen(), session);
         }
 
         private void Route1BSelected(object sender, MouseButtonEventArgs e)
         {
+            session.setpreviousscreen("busselectionscreen");
             session.setbusroute("Route1B");
             Switcher.Switch(new LaunchScreen(), session);
         }
 
         private void Route2ASelected(object sender, MouseButtonEventArgs e)
         {
+            session.setpreviousscreen("busselectionscreen");
             session.setbusroute("Route2A");
             Switcher.Switch(new LaunchScreen(), session);
         }
 
         private void Route2BSelected(object sender, MouseButtonEventArgs e)
         {
+            session.setpreviousscreen("busselectionscreen");
             session.setbusroute("Route2B");
             Switcher.Switch(new LaunchScreen(), session);
         }
