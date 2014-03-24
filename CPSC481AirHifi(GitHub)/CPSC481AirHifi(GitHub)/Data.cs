@@ -38,7 +38,7 @@ namespace CPSC481AirHifi_GitHub_
 
         public void addReviewThePurpleHotel(string review)
         {
-            ThePurpleHotelReviews = ThePurpleHotelReviews = "\r\n \r\n" + review;
+            ThePurpleHotelReviews = ThePurpleHotelReviews + "\r\n \r\n" + review;
         }
     }
 }

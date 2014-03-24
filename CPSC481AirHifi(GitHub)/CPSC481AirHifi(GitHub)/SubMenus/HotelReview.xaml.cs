@@ -56,7 +56,28 @@ namespace CPSC481AirHifi_GitHub_
         #region Click Events
         private void AddReview(object sender, RoutedEventArgs e)
         {
-            //update reviews
+            session.addHotelReview(hotelreviewtextbox.Text);
+            hotelreviewtextbox.Text = "";
+            hotelreviewsbox.Text = session.getHotelReviews();
+        }
+
+        private void ClearTextBox(object sender, RoutedEventArgs e)
+        {
+            var box = sender as TextBox;
+            box.Text = "";
+        }
+        #endregion
+
+        #region Keyboard Events
+        public void EnterKeyPressed(object sender, KeyEventArgs e)
+        {
+            var box = sender as TextBox;
+            if (e.Key == Key.Enter)
+            {
+                session.addHotelReview(hotelreviewtextbox.Text);
+                hotelreviewtextbox.Text = "";
+                hotelreviewsbox.Text = session.getHotelReviews();
+            }
         }
         #endregion
 
@@ -117,14 +138,7 @@ namespace CPSC481AirHifi_GitHub_
         private void HotelName(object sender, RoutedEventArgs e)
         {
             var label = sender as Label;
-            if (session.gethotel() == null)
-            {
-                return;
-            }
-            else
-            {
-                label.Content = session.gethotel();
-            }
+            label.Content = "Reviews: " + session.gethotel();
         }
 
         private void HotelReviews(object sender, RoutedEventArgs e)
@@ -134,7 +148,11 @@ namespace CPSC481AirHifi_GitHub_
             box.Text = session.getHotelReviews();
         }
 
-
+        private void ReviewBox(object sender, RoutedEventArgs e)
+        {
+            var box = sender as TextBox;
+            hotelreviewtextbox = box;
+        }
         #endregion
 
         #region Window Transitions
